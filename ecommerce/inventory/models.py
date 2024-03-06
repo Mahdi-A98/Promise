@@ -35,3 +35,40 @@ class Category(models.Model):
         db_table = "category"
         verbose_name = _("category")
         verbose_name_plural = _("category's")
+
+
+class Product(models.Model):
+    name = models.CharField(
+        verbose_name=_("name"),
+        max_length=150,
+    )
+    slug = models.SlugField(
+        max_length=255,
+    )
+    web_id = models.CharField(
+        max_length=50,
+        unique=True,
+    )
+
+    description = models.TextField(
+        blank=True
+    )
+    category = models.ForeignKey(
+        to=Category,
+        on_delete=models.SET_NULL,
+        null=True,
+        blank=True
+    )
+    is_active = models.BooleanField(
+        default=False,
+    )
+    created_at = models.DateTimeField(
+        auto_now_add=True,
+        editable=False,
+    )
+    updated_at = models.DateTimeField(
+        auto_now=True,
+    )
+
+    def __str__(self):
+        return self.name
