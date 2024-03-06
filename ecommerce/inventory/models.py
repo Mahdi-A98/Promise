@@ -34,7 +34,7 @@ class Category(models.Model):
     class Meta:
         db_table = "category"
         verbose_name = _("category")
-        verbose_name_plural = _("category's")
+        verbose_name_plural = _("categories")
 
 
 class Product(models.Model):
@@ -69,6 +69,11 @@ class Product(models.Model):
     updated_at = models.DateTimeField(
         auto_now=True,
     )
+
+    class Meta:
+        db_table = "product"
+        verbose_name = _("product")
+        verbose_name_plural = _("products")
 
     def __str__(self):
         return self.name
