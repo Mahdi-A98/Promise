@@ -77,3 +77,18 @@ class Product(models.Model):
 
     def __str__(self):
         return self.name
+
+
+class Brand(models.Model):
+    name = models.CharField(
+        max_length=150,
+        unique=True
+    )
+
+    class Meta:
+        db_table = "brand"
+        verbose_name = _("brand")
+        verbose_name_plural = _("brands")
+
+    def __str__(self):
+        return self.name
