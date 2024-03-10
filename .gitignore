@@ -2,4 +2,6 @@ venv
 venv/
 *.env
 *.pyc
+*.xml
 db.sqlite3
+.idea/
