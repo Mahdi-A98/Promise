@@ -1,5 +1,7 @@
-from inventory.models import (Category, Product, ProductInventory, ProductType, ProductAttributeValue,
-                              ProductAttributeValues, Media, Stock, Brand)
+from inventory.models import (
+    Category, Product, ProductInventory, ProductType, ProductAttributeValue,
+    ProductAttributeValues, Media, Stock, Brand
+    )
 
 from rest_framework import serializers
 
@@ -83,7 +85,6 @@ class ProductInventorySerializer(serializers.ModelSerializer):
 class ProductInventorySearchSerializer(serializers.ModelSerializer):
     product = ProductSerializer(many=False, read_only=True)
     brand = BrandSerializer(many=False, read_only=True)
-    breakpoint()
 
     class Meta:
         model = ProductInventory
