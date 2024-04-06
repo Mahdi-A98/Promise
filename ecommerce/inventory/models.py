@@ -19,8 +19,9 @@ class Category(MPTTModel):
         db_table = "category"
         verbose_name = _("category")
         verbose_name_plural = _("categories")
+        ordering = ("name",)
 
-    
+
     def __str__(self) -> str:
         return self.name
 
