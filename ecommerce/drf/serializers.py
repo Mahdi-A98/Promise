@@ -52,28 +52,33 @@ class BrandSerializer(serializers.ModelSerializer):
         read_only = True
 
 
+class MediaSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Media
+        fields = ["product_inventory", "alt_text", "is_feature", "img_url", "get_image"]
+
+
 class ProductInventorySerializer(serializers.ModelSerializer):
-    media = ProductMediaSerializer(many=True, read_only=True)
+    # media = ProductMediaSerializer(many=True, read_only=True)
+    media = MediaSerializer(many=True)
     product = ProductSerializer(many=False, read_only=True)
     brand = BrandSerializer(read_only=True)
     attributes = ProductAttributeValueSerializers(source="attribute_values", many=True, read_only=True)
 
     class Meta:
         model = ProductInventory
+        depth = 2
         fields = [
-            "name",
-            "slug",
             "sku",
             "upc",
-            "category",
-            "Product",
+            "product",
             "product_type",
             "brand",
             "store_price",
             "is_default",
             "weight",
             "attributes",
-            "promotion_price",
+            # "promotion_price",
             "media"
         ]
         read_only = True
