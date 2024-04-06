@@ -24,6 +24,8 @@ class Category(MPTTModel):
     def __str__(self) -> str:
         return self.name
 
+    def get_absolute_url(self):
+        return f"/{self.slug}/"
 
 class Product(models.Model):
     name = models.CharField(verbose_name=_("name"), max_length=150)
