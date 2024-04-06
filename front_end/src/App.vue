@@ -38,3 +38,21 @@
     </footer>
   </div>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      showMobileMenu : false,
+    }
+  },
+  methods: {
+    changeBurger() {
+      this.showMobileMenu = ! this.showMobileMenu;
+    }
+  }
+  
+}
+</script>
+
+
