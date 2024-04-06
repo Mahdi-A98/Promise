@@ -126,7 +126,7 @@ class ProductAttributeValue(models.Model):
     attribute_value_image = models.ForeignKey(ProductAttributeValueImage, on_delete=models.SET_NULL, null=True, blank=True)
 
     def __str__(self):
-        return self.attribute_value
+        return f"{self.product_attribute.name}: {self.attribute_value}"
 
 
 class ProductInventory(models.Model):
