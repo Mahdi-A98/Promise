@@ -35,6 +35,7 @@ class Product(models.Model):
 
     description = models.TextField(null=True, blank=True)
     category = models.ForeignKey(to=Category, on_delete=models.SET_NULL, null=True, blank=True)
+    thumbnail = models.ImageField(upload_to="product_images/", blank=True, null=True)
     is_active = models.BooleanField(default=False)
     created_at = models.DateTimeField(auto_now_add=True, editable=False)
     updated_at = models.DateTimeField(auto_now=True)
@@ -46,7 +47,15 @@ class Product(models.Model):
 
     def __str__(self):
         return self.name
-
+    
+    def get_absolute_url(self):
+        return f"/{self.category.slug}/{self.slug}"
+    
+    def get_thumbnail(self):
+        if self.thumbnail:
+            return settings.BASE_URL + self.thumbnail.url
+        else: 
+            return ""
 
 class Brand(models.Model):
     name = models.CharField(
