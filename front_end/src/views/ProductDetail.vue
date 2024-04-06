@@ -43,3 +43,41 @@
         </template>
     </div>
 </template>
+
+<script>
+import axios from "axios"
+import {ref, reactive} from "vue"
+export default {
+    name : "productDetail",
+    data() {
+        return {
+            product : null,
+            productInventories: [],
+            productAttributes: [],
+            mainImage: {current_image: "", previus_image: ""}
+        }
+    },
+    mounted() {
+        this.getProduct()
+    },
+    methods: {
+        getProduct() {
+            const product_slug = this.$route.params.product_slug
+            const category_slug = this.$route.params.category_slug
+            axios
+                .get(`/api/inventory/${category_slug}/${product_slug}`)
+                .then(response => {
+                    this.productInventories = response.data
+                    this.product = response.data[0].product
+                    this.mainImage.current_image = this.product?.get_thumbnail
+                    // alert(JSON.stringify(this.productInventories))
+                    // document.getElementById("mainString").
+                    
+                })
+                .catch(error => {
+                    console.log(error)
+                });
+        },
+    },
+}
+</script>
