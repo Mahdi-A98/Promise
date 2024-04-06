@@ -56,3 +56,11 @@ export default {
 </script>
 
 
+<style lang="scss">
+@import '../node_modules/bulma';
+// footer {
+//   position:absolute;
+//   width:100%;
+//   bottom: 0px !important;
+// }
+</style>
