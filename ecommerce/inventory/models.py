@@ -101,6 +101,17 @@ class ProductType(models.Model):
         return self.name
 
 
+class ProductAttributeValueImage(models.Model):
+    image = models.ImageField(upload_to="product_attribute_value_images/")
+    alt_text = models.CharField(verbose_name=_("alternative text"), max_length=100, null=True, blank=True)
+    defualt_width = models.PositiveSmallIntegerField(verbose_name=_("default width"), null=True, blank=True)
+    defualt_height = models.PositiveSmallIntegerField(verbose_name=_("default height"), null=True, blank=True)
+    default_border_radious = models.PositiveSmallIntegerField(verbose_name=_("default border radious"), null=True, blank=True)
+
+    def get_image(self):
+        return settings.BASE_URL + self.image.url
+
+
 class ProductAttributeValue(models.Model):
     product_attribute = models.ForeignKey(
         ProductAttribute,
@@ -111,6 +122,8 @@ class ProductAttributeValue(models.Model):
         verbose_name=_("attribute value"),
         max_length=250
     )
+    
+    attribute_value_image = models.ForeignKey(ProductAttributeValueImage, on_delete=models.SET_NULL, null=True, blank=True)
 
     def __str__(self):
         return self.attribute_value
