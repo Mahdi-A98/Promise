@@ -71,6 +71,14 @@ class Brand(models.Model):
     def __str__(self):
         return self.name
 
+class ProductAttributeCategory(models.Model):
+    name = models.CharField(verbose_name=_("name"), max_length=100)
+    slug = models.SlugField(verbose_name=_("slug"), max_length=150, unique=True)
+    is_active = models.BooleanField(verbose_name=_("is active"), default=False)
+    class Meta:
+        db_table = "product_attribute_category"
+        verbose_name = _("product attribute category")
+        verbose_name_plural = _("product attribute categories")
 
 class ProductAttribute(models.Model):
     name = models.CharField(verbose_name=_("name"), max_length=250, unique=True)
