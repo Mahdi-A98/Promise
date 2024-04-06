@@ -1,5 +1,6 @@
 from django.db import models
 from django.utils.translation import gettext_lazy as _
+from django.conf import settings
 
 from mptt.models import TreeForeignKey, MPTTModel
 
@@ -56,6 +57,17 @@ class Product(models.Model):
             return settings.BASE_URL + self.thumbnail.url
         else: 
             return ""
+        
+    # def make_tumbnail(self, image, size=(300, 200)):
+    #     img = Image.open(image)
+    #     img.convert("RGB")
+    #     img.tumbnail(size)
+        
+    #     thumb_io = BytesIO()
+    #     img.save(thumb_io, "JPEG", quality=85)
+        
+    #     thumbnail = File(thumb_io, name=image.name)
+    #     return thumbnail
 
 class Brand(models.Model):
     name = models.CharField(
@@ -179,7 +191,7 @@ class ProductInventory(models.Model):
         verbose_name=_("updated at"),
         auto_now=True
     )
-    is_active = models.BooleanField(verbose_name=_("is active"), default=False)
+    is_active = models.BooleanField(verbose_name=_("is active"), default=True)
     is_deleted = models.BooleanField(verbose_name=_("is deleted"), default=False)
     is_default = models.BooleanField(verbose_name=_("is default"), default=False)
     is_digital = models.BooleanField(verbose_name=_("is digital"), default=False)
@@ -195,7 +207,7 @@ class Media(models.Model):
         related_name="media",
         on_delete=models.PROTECT
     )
-    img_url = models.ImageField()
+    img_url = models.ImageField(upload_to="product_inventory_images/")
     alt_text = models.CharField(
         verbose_name=_("alternative text"),
         max_length=255,
@@ -216,7 +228,12 @@ class Media(models.Model):
 
     def __str__(self):
         return self.alt_text
-
+    
+    def get_image(self):
+        if self.img_url:
+            return settings.BASE_URL + self.img_url.url
+        else:
+            return ""
 
 class Stock(models.Model):
     product_inventory = models.OneToOneField(
@@ -250,6 +267,9 @@ class ProductAttributeValues(models.Model):
 
     class Meta:
         unique_together = (("attributevalues", "productinventory"),)
+
+    def __str__(self):
+        return f"{self.productinventory.sku} - {self.attributevalues.product_attribute.name}"
 
 
 class ProductTypeAttribute(models.Model):
