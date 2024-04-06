@@ -83,7 +83,8 @@ class ProductAttributeCategory(models.Model):
 class ProductAttribute(models.Model):
     name = models.CharField(verbose_name=_("name"), max_length=250, unique=True)
     description = models.TextField(verbose_name=_("description"), null=True, blank=True)
-
+    category = models.ForeignKey(to=ProductAttributeCategory, null=True, blank=True, on_delete=models.SET_NULL)
+    
     def __str__(self):
         return self.name
 
