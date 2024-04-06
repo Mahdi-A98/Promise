@@ -9,8 +9,9 @@ from rest_framework import serializers
 class ProductSerializer(serializers.ModelSerializer):
     class Meta:
         model = Product
-        fields = ["name", "web_id", "category", "description"]
+        fields = ["name", "web_id", "category", "description", "get_thumbnail", "get_absolute_url"]
         editable = False
+        depth = 2
 
 
 class ProductAttributeValueSerializers(serializers.ModelSerializer):
