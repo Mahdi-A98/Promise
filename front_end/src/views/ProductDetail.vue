@@ -81,3 +81,35 @@ export default {
     },
 }
 </script>
+<style scoped>
+.mainImage:hover {
+    transform: scale3d(1.1, 1.1, 1); 
+    cursor: pointer; 
+    transition: transform 1s; 
+}
+.main-image-box {
+    overflow: hidden;
+    /* background-color: aqua; */
+}
+.product-inventory-image {
+    border-radius: 15px;
+}
+.attribute-name {
+    background-color: rgb(31 49 51);
+    color: rgb(255 255 255);
+    align-content: center;
+    /* font-size:1.8vw; */
+}
+.attribute-value {
+    color: chocolate;
+    background-color: rgb(237, 237, 237);
+    align-content: center;
+    /* border: 1px solid black;
+    border-radius: 0px 5px 5px 0px; */
+}
+.attribute-box {
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size:1.8vw;
+}
+</style>
