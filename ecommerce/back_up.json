@@ -1,0 +1,2256 @@
+[
+{
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+        "action_time": "2024-03-22T14:50:31.382Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "1",
+        "object_repr": "Category object (1)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+        "action_time": "2024-03-22T14:55:52.686Z",
+        "user": 1,
+        "content_type": 11,
+        "object_id": "1",
+        "object_repr": "Vita Electric Bike",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+        "action_time": "2024-03-22T14:57:51.157Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "1",
+        "object_repr": "Bike",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+        "action_time": "2024-03-22T14:58:08.088Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "1",
+        "object_repr": "Bosch",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+        "action_time": "2024-03-22T14:59:03.806Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "1",
+        "object_repr": "q7w8e9r4t5y6",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+        "action_time": "2024-04-04T12:38:27.993Z",
+        "user": 1,
+        "content_type": 11,
+        "object_id": "1",
+        "object_repr": "Vita Electric Bike",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Thumbnail\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+        "action_time": "2024-04-04T13:48:52.660Z",
+        "user": 1,
+        "content_type": 11,
+        "object_id": "1",
+        "object_repr": "Vita Electric Bike",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Thumbnail\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+        "action_time": "2024-04-04T20:36:20.144Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "1",
+        "object_repr": "q7w8e9r4t5y6",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+        "action_time": "2024-04-04T20:36:34.299Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "1",
+        "object_repr": "q7w8e9r4t5y6",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 10,
+    "fields": {
+        "action_time": "2024-04-05T08:08:59.037Z",
+        "user": 1,
+        "content_type": 15,
+        "object_id": "1",
+        "object_repr": "bosch-vita-ebike-black",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 11,
+    "fields": {
+        "action_time": "2024-04-05T08:09:21.685Z",
+        "user": 1,
+        "content_type": 15,
+        "object_id": "2",
+        "object_repr": "bosch-vita-ebike-black",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 12,
+    "fields": {
+        "action_time": "2024-04-05T08:09:39.628Z",
+        "user": 1,
+        "content_type": 15,
+        "object_id": "3",
+        "object_repr": "bosch-vita-ebike-black",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 13,
+    "fields": {
+        "action_time": "2024-04-05T08:44:11.889Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "1",
+        "object_repr": "Frame",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 14,
+    "fields": {
+        "action_time": "2024-04-05T08:45:19.282Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "2",
+        "object_repr": "Fork",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 15,
+    "fields": {
+        "action_time": "2024-04-05T08:46:32.310Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "3",
+        "object_repr": "Shock",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 16,
+    "fields": {
+        "action_time": "2024-04-05T08:50:26.060Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "4",
+        "object_repr": "Wheel front",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 17,
+    "fields": {
+        "action_time": "2024-04-05T08:50:41.875Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "5",
+        "object_repr": "Wheel rear",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 18,
+    "fields": {
+        "action_time": "2024-04-05T08:52:42.446Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "6",
+        "object_repr": "Tyre",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 19,
+    "fields": {
+        "action_time": "2024-04-05T08:53:08.766Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "7",
+        "object_repr": "Battery",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 20,
+    "fields": {
+        "action_time": "2024-04-05T08:53:23.739Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "8",
+        "object_repr": "Charger",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 21,
+    "fields": {
+        "action_time": "2024-04-05T08:54:15.297Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "9",
+        "object_repr": "Computer",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 22,
+    "fields": {
+        "action_time": "2024-04-05T08:54:26.089Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "10",
+        "object_repr": "Motor",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 23,
+    "fields": {
+        "action_time": "2024-04-05T08:55:32.607Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "11",
+        "object_repr": "Shifter",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 24,
+    "fields": {
+        "action_time": "2024-04-05T08:56:54.073Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "12",
+        "object_repr": "Rear derailleur",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 25,
+    "fields": {
+        "action_time": "2024-04-05T08:57:20.403Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "13",
+        "object_repr": "Brake",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 26,
+    "fields": {
+        "action_time": "2024-04-05T08:57:40.058Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "14",
+        "object_repr": "Weight",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 27,
+    "fields": {
+        "action_time": "2024-04-05T08:58:23.009Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "1",
+        "object_repr": "Size: S Alpha Platinum Aluminium, curved top tube, Removable Integrated Battery (RIB), tapered head tube, Control Freak internal routing, magnesium rocker link, Motor Armour, Mino Link, ABP, Boost148,",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 28,
+    "fields": {
+        "action_time": "2024-04-05T08:58:41.684Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "2",
+        "object_repr": "Size: M, L, XL Alpha Platinum Aluminium, Removable Integrated Battery (RIB), tapered head tube, Control Freak internal routing, magnesium rocker link, Motor Armour, Mino Link, ABP, Boost148, 12 mm thr",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 29,
+    "fields": {
+        "action_time": "2024-04-05T09:01:01.312Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "3",
+        "object_repr": "RockShox Domain RC, DebonAir, Motion Control damper, lockout, tapered steerer, 44 mm offset, oversized crown for eMTB, Boost110, 15 mm Maxle Stealth, 160 mm travel",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 30,
+    "fields": {
+        "action_time": "2024-04-05T09:03:14.071Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "4",
+        "object_repr": "RockShox Deluxe Select+ RT, 230 mm x 57.5 mm",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 31,
+    "fields": {
+        "action_time": "2024-04-05T09:03:37.764Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "5",
+        "object_repr": "Bontrager Line Comp 30, Tubeless Ready, 6-bolt, Boost110, 15 mm thru axle, 29\"",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 32,
+    "fields": {
+        "action_time": "2024-04-05T09:03:59.428Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "6",
+        "object_repr": "Bontrager Line Comp 30, Tubeless Ready, Rapid Drive 108, 6-bolt, Boost148, 12 mm thru axle, 29\"",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 33,
+    "fields": {
+        "action_time": "2024-04-05T09:04:18.185Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "7",
+        "object_repr": "Bontrager XR5 Team Issue, Tubeless Ready, Inner Strength casing, aramid bead, 60 tpi, 29x2.50\"",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 34,
+    "fields": {
+        "action_time": "2024-04-05T09:04:55.441Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "8",
+        "object_repr": "Bosch PowerTube 625 Wh, smart system",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 35,
+    "fields": {
+        "action_time": "2024-04-05T09:05:23.743Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "9",
+        "object_repr": "Bosch standard 4A, 230V, smart system",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 36,
+    "fields": {
+        "action_time": "2024-04-05T09:05:42.178Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "10",
+        "object_repr": "Bosch LED remote, smart system",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 37,
+    "fields": {
+        "action_time": "2024-04-05T09:06:16.553Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "11",
+        "object_repr": "Bosch Performance Line CX, smart system, magnesium motor body, 85 Nm",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 38,
+    "fields": {
+        "action_time": "2024-04-05T09:07:48.502Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "12",
+        "object_repr": "SRAM AXS POD",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 39,
+    "fields": {
+        "action_time": "2024-04-05T09:08:05.869Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "13",
+        "object_repr": "SRAM GX Eagle AXS, T-Type",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 40,
+    "fields": {
+        "action_time": "2024-04-05T09:08:48.540Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "14",
+        "object_repr": "SRAM DB 8 4-piston hydraulic disc",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 41,
+    "fields": {
+        "action_time": "2024-04-05T09:10:33.494Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "15",
+        "object_repr": "M - 23.70 kg / 52.25 lbs (with TLR sealant, no tubes)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 42,
+    "fields": {
+        "action_time": "2024-04-05T09:15:35.060Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "15",
+        "object_repr": "Colour",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 43,
+    "fields": {
+        "action_time": "2024-04-05T09:15:44.925Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "16",
+        "object_repr": "Size",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 44,
+    "fields": {
+        "action_time": "2024-04-05T09:17:22.158Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "16",
+        "object_repr": "Black",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 45,
+    "fields": {
+        "action_time": "2024-04-05T09:18:42.124Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "17",
+        "object_repr": "White",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 46,
+    "fields": {
+        "action_time": "2024-04-05T09:18:56.740Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "18",
+        "object_repr": "M",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 47,
+    "fields": {
+        "action_time": "2024-04-05T09:19:03.556Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "19",
+        "object_repr": "S",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 48,
+    "fields": {
+        "action_time": "2024-04-05T09:19:38.778Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "20",
+        "object_repr": "L",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 49,
+    "fields": {
+        "action_time": "2024-04-05T09:19:53.190Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "21",
+        "object_repr": "XL",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 50,
+    "fields": {
+        "action_time": "2024-04-05T11:57:23.464Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "1",
+        "object_repr": "ProductAttributeValues object (1)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 51,
+    "fields": {
+        "action_time": "2024-04-05T11:59:42.280Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "2",
+        "object_repr": "ProductAttributeValues object (2)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 52,
+    "fields": {
+        "action_time": "2024-04-05T12:00:05.133Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "3",
+        "object_repr": "ProductAttributeValues object (3)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 53,
+    "fields": {
+        "action_time": "2024-04-05T12:00:13.264Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "4",
+        "object_repr": "ProductAttributeValues object (4)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 54,
+    "fields": {
+        "action_time": "2024-04-05T12:00:21.006Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "5",
+        "object_repr": "ProductAttributeValues object (5)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 55,
+    "fields": {
+        "action_time": "2024-04-05T12:00:33.477Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "6",
+        "object_repr": "ProductAttributeValues object (6)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 56,
+    "fields": {
+        "action_time": "2024-04-05T12:00:41.429Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "7",
+        "object_repr": "ProductAttributeValues object (7)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 57,
+    "fields": {
+        "action_time": "2024-04-05T12:01:27.214Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "8",
+        "object_repr": "ProductAttributeValues object (8)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 58,
+    "fields": {
+        "action_time": "2024-04-05T12:05:50.626Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "9",
+        "object_repr": "q7w8e9r4t5y6 - Motor",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 59,
+    "fields": {
+        "action_time": "2024-04-05T12:06:01.876Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "10",
+        "object_repr": "q7w8e9r4t5y6 - Shifter",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 60,
+    "fields": {
+        "action_time": "2024-04-05T12:06:08.174Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "11",
+        "object_repr": "q7w8e9r4t5y6 - Rear derailleur",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 61,
+    "fields": {
+        "action_time": "2024-04-05T12:06:35.274Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "12",
+        "object_repr": "q7w8e9r4t5y6 - Brake",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 62,
+    "fields": {
+        "action_time": "2024-04-05T12:06:48.657Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "13",
+        "object_repr": "q7w8e9r4t5y6 - Weight",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 63,
+    "fields": {
+        "action_time": "2024-04-07T04:17:47.935Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "15",
+        "object_repr": "Colour",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Is selective\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 64,
+    "fields": {
+        "action_time": "2024-04-07T04:18:01.715Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "16",
+        "object_repr": "Size",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Is selective\"]}}]"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 1,
+    "fields": {
+        "name": "Can add log entry",
+        "content_type": 1,
+        "codename": "add_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 2,
+    "fields": {
+        "name": "Can change log entry",
+        "content_type": 1,
+        "codename": "change_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 3,
+    "fields": {
+        "name": "Can delete log entry",
+        "content_type": 1,
+        "codename": "delete_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 4,
+    "fields": {
+        "name": "Can view log entry",
+        "content_type": 1,
+        "codename": "view_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 5,
+    "fields": {
+        "name": "Can add permission",
+        "content_type": 2,
+        "codename": "add_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 6,
+    "fields": {
+        "name": "Can change permission",
+        "content_type": 2,
+        "codename": "change_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 7,
+    "fields": {
+        "name": "Can delete permission",
+        "content_type": 2,
+        "codename": "delete_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 8,
+    "fields": {
+        "name": "Can view permission",
+        "content_type": 2,
+        "codename": "view_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 9,
+    "fields": {
+        "name": "Can add group",
+        "content_type": 3,
+        "codename": "add_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 10,
+    "fields": {
+        "name": "Can change group",
+        "content_type": 3,
+        "codename": "change_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 11,
+    "fields": {
+        "name": "Can delete group",
+        "content_type": 3,
+        "codename": "delete_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 12,
+    "fields": {
+        "name": "Can view group",
+        "content_type": 3,
+        "codename": "view_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 13,
+    "fields": {
+        "name": "Can add user",
+        "content_type": 4,
+        "codename": "add_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 14,
+    "fields": {
+        "name": "Can change user",
+        "content_type": 4,
+        "codename": "change_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 15,
+    "fields": {
+        "name": "Can delete user",
+        "content_type": 4,
+        "codename": "delete_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 16,
+    "fields": {
+        "name": "Can view user",
+        "content_type": 4,
+        "codename": "view_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 17,
+    "fields": {
+        "name": "Can add content type",
+        "content_type": 5,
+        "codename": "add_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 18,
+    "fields": {
+        "name": "Can change content type",
+        "content_type": 5,
+        "codename": "change_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 19,
+    "fields": {
+        "name": "Can delete content type",
+        "content_type": 5,
+        "codename": "delete_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 20,
+    "fields": {
+        "name": "Can view content type",
+        "content_type": 5,
+        "codename": "view_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 21,
+    "fields": {
+        "name": "Can add session",
+        "content_type": 6,
+        "codename": "add_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 22,
+    "fields": {
+        "name": "Can change session",
+        "content_type": 6,
+        "codename": "change_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 23,
+    "fields": {
+        "name": "Can delete session",
+        "content_type": 6,
+        "codename": "delete_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 24,
+    "fields": {
+        "name": "Can view session",
+        "content_type": 6,
+        "codename": "view_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 25,
+    "fields": {
+        "name": "Can add brand",
+        "content_type": 7,
+        "codename": "add_brand"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 26,
+    "fields": {
+        "name": "Can change brand",
+        "content_type": 7,
+        "codename": "change_brand"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 27,
+    "fields": {
+        "name": "Can delete brand",
+        "content_type": 7,
+        "codename": "delete_brand"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 28,
+    "fields": {
+        "name": "Can view brand",
+        "content_type": 7,
+        "codename": "view_brand"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 29,
+    "fields": {
+        "name": "Can add product attribute",
+        "content_type": 8,
+        "codename": "add_productattribute"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 30,
+    "fields": {
+        "name": "Can change product attribute",
+        "content_type": 8,
+        "codename": "change_productattribute"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 31,
+    "fields": {
+        "name": "Can delete product attribute",
+        "content_type": 8,
+        "codename": "delete_productattribute"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 32,
+    "fields": {
+        "name": "Can view product attribute",
+        "content_type": 8,
+        "codename": "view_productattribute"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 33,
+    "fields": {
+        "name": "Can add product type",
+        "content_type": 9,
+        "codename": "add_producttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 34,
+    "fields": {
+        "name": "Can change product type",
+        "content_type": 9,
+        "codename": "change_producttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 35,
+    "fields": {
+        "name": "Can delete product type",
+        "content_type": 9,
+        "codename": "delete_producttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 36,
+    "fields": {
+        "name": "Can view product type",
+        "content_type": 9,
+        "codename": "view_producttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 37,
+    "fields": {
+        "name": "Can add category",
+        "content_type": 10,
+        "codename": "add_category"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 38,
+    "fields": {
+        "name": "Can change category",
+        "content_type": 10,
+        "codename": "change_category"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 39,
+    "fields": {
+        "name": "Can delete category",
+        "content_type": 10,
+        "codename": "delete_category"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 40,
+    "fields": {
+        "name": "Can view category",
+        "content_type": 10,
+        "codename": "view_category"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 41,
+    "fields": {
+        "name": "Can add product",
+        "content_type": 11,
+        "codename": "add_product"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 42,
+    "fields": {
+        "name": "Can change product",
+        "content_type": 11,
+        "codename": "change_product"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 43,
+    "fields": {
+        "name": "Can delete product",
+        "content_type": 11,
+        "codename": "delete_product"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 44,
+    "fields": {
+        "name": "Can view product",
+        "content_type": 11,
+        "codename": "view_product"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 45,
+    "fields": {
+        "name": "Can add product attribute value",
+        "content_type": 12,
+        "codename": "add_productattributevalue"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 46,
+    "fields": {
+        "name": "Can change product attribute value",
+        "content_type": 12,
+        "codename": "change_productattributevalue"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 47,
+    "fields": {
+        "name": "Can delete product attribute value",
+        "content_type": 12,
+        "codename": "delete_productattributevalue"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 48,
+    "fields": {
+        "name": "Can view product attribute value",
+        "content_type": 12,
+        "codename": "view_productattributevalue"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 49,
+    "fields": {
+        "name": "Can add product attribute values",
+        "content_type": 13,
+        "codename": "add_productattributevalues"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 50,
+    "fields": {
+        "name": "Can change product attribute values",
+        "content_type": 13,
+        "codename": "change_productattributevalues"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 51,
+    "fields": {
+        "name": "Can delete product attribute values",
+        "content_type": 13,
+        "codename": "delete_productattributevalues"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 52,
+    "fields": {
+        "name": "Can view product attribute values",
+        "content_type": 13,
+        "codename": "view_productattributevalues"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 53,
+    "fields": {
+        "name": "Can add product inventory",
+        "content_type": 14,
+        "codename": "add_productinventory"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 54,
+    "fields": {
+        "name": "Can change product inventory",
+        "content_type": 14,
+        "codename": "change_productinventory"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 55,
+    "fields": {
+        "name": "Can delete product inventory",
+        "content_type": 14,
+        "codename": "delete_productinventory"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 56,
+    "fields": {
+        "name": "Can view product inventory",
+        "content_type": 14,
+        "codename": "view_productinventory"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 57,
+    "fields": {
+        "name": "Can add media",
+        "content_type": 15,
+        "codename": "add_media"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 58,
+    "fields": {
+        "name": "Can change media",
+        "content_type": 15,
+        "codename": "change_media"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 59,
+    "fields": {
+        "name": "Can delete media",
+        "content_type": 15,
+        "codename": "delete_media"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 60,
+    "fields": {
+        "name": "Can view media",
+        "content_type": 15,
+        "codename": "view_media"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 61,
+    "fields": {
+        "name": "Can add product type attribute",
+        "content_type": 16,
+        "codename": "add_producttypeattribute"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 62,
+    "fields": {
+        "name": "Can change product type attribute",
+        "content_type": 16,
+        "codename": "change_producttypeattribute"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 63,
+    "fields": {
+        "name": "Can delete product type attribute",
+        "content_type": 16,
+        "codename": "delete_producttypeattribute"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 64,
+    "fields": {
+        "name": "Can view product type attribute",
+        "content_type": 16,
+        "codename": "view_producttypeattribute"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 65,
+    "fields": {
+        "name": "Can add stock",
+        "content_type": 17,
+        "codename": "add_stock"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 66,
+    "fields": {
+        "name": "Can change stock",
+        "content_type": 17,
+        "codename": "change_stock"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 67,
+    "fields": {
+        "name": "Can delete stock",
+        "content_type": 17,
+        "codename": "delete_stock"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 68,
+    "fields": {
+        "name": "Can view stock",
+        "content_type": 17,
+        "codename": "view_stock"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 69,
+    "fields": {
+        "name": "Can add product attribute value image",
+        "content_type": 18,
+        "codename": "add_productattributevalueimage"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 70,
+    "fields": {
+        "name": "Can change product attribute value image",
+        "content_type": 18,
+        "codename": "change_productattributevalueimage"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 71,
+    "fields": {
+        "name": "Can delete product attribute value image",
+        "content_type": 18,
+        "codename": "delete_productattributevalueimage"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 72,
+    "fields": {
+        "name": "Can view product attribute value image",
+        "content_type": 18,
+        "codename": "view_productattributevalueimage"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 73,
+    "fields": {
+        "name": "Can add product attribute category",
+        "content_type": 19,
+        "codename": "add_productattributecategory"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 74,
+    "fields": {
+        "name": "Can change product attribute category",
+        "content_type": 19,
+        "codename": "change_productattributecategory"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 75,
+    "fields": {
+        "name": "Can delete product attribute category",
+        "content_type": 19,
+        "codename": "delete_productattributecategory"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 76,
+    "fields": {
+        "name": "Can view product attribute category",
+        "content_type": 19,
+        "codename": "view_productattributecategory"
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$720000$o6kHbCNos9ClXBM4RdmUAW$9rDHv/oAIazqxeUuy5fM6PQF/8UKqQNsSV8SLs0f4B0=",
+        "last_login": "2024-04-04T12:37:15.421Z",
+        "is_superuser": true,
+        "username": "Mahdi98",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2024-03-22T14:49:15.162Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 1,
+    "fields": {
+        "app_label": "admin",
+        "model": "logentry"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 2,
+    "fields": {
+        "app_label": "auth",
+        "model": "permission"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 3,
+    "fields": {
+        "app_label": "auth",
+        "model": "group"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 4,
+    "fields": {
+        "app_label": "auth",
+        "model": "user"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 5,
+    "fields": {
+        "app_label": "contenttypes",
+        "model": "contenttype"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 6,
+    "fields": {
+        "app_label": "sessions",
+        "model": "session"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 7,
+    "fields": {
+        "app_label": "inventory",
+        "model": "brand"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 8,
+    "fields": {
+        "app_label": "inventory",
+        "model": "productattribute"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 9,
+    "fields": {
+        "app_label": "inventory",
+        "model": "producttype"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 10,
+    "fields": {
+        "app_label": "inventory",
+        "model": "category"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 11,
+    "fields": {
+        "app_label": "inventory",
+        "model": "product"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 12,
+    "fields": {
+        "app_label": "inventory",
+        "model": "productattributevalue"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 13,
+    "fields": {
+        "app_label": "inventory",
+        "model": "productattributevalues"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 14,
+    "fields": {
+        "app_label": "inventory",
+        "model": "productinventory"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 15,
+    "fields": {
+        "app_label": "inventory",
+        "model": "media"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 16,
+    "fields": {
+        "app_label": "inventory",
+        "model": "producttypeattribute"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 17,
+    "fields": {
+        "app_label": "inventory",
+        "model": "stock"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 18,
+    "fields": {
+        "app_label": "inventory",
+        "model": "productattributevalueimage"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 19,
+    "fields": {
+        "app_label": "inventory",
+        "model": "productattributecategory"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "b9ymqsq3imecimky09970pzhobmyqsjl",
+    "fields": {
+        "session_data": ".eJxVjEEOwiAQRe_C2pB2oFBcuu8ZyMwAUjWQlHZlvLtt0oVu_3vvv4XHbc1-a3HxcxBX0YvL70bIz1gOEB5Y7lVyLesykzwUedImpxri63a6fwcZW95rjaRSSGZURgGMTEk54xKTgcGyZR3AOVA2EWmiOOgeOHIHu4Q6mk58vu9bOA8:1rsMLD:7KqffKMKdriNTw6JAfgXUtdBV2YiOGlalrgZS5ZPCXs",
+        "expire_date": "2024-04-18T12:37:15.432Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "u5p7jlq9ebqwy07de9f6a3g09efxafn6",
+    "fields": {
+        "session_data": ".eJxVjEEOwiAQRe_C2pB2oFBcuu8ZyMwAUjWQlHZlvLtt0oVu_3vvv4XHbc1-a3HxcxBX0YvL70bIz1gOEB5Y7lVyLesykzwUedImpxri63a6fwcZW95rjaRSSGZURgGMTEk54xKTgcGyZR3AOVA2EWmiOOgeOHIHu4Q6mk58vu9bOA8:1rngCu:wvJ2oMLlzT9v7Qm3tAaH5sht4vYgnNejs7x1pYU8Jx8",
+        "expire_date": "2024-04-05T14:49:20.079Z"
+    }
+},
+{
+    "model": "inventory.category",
+    "pk": 1,
+    "fields": {
+        "name": "Entertainments",
+        "slug": "entertainments",
+        "is_active": true,
+        "parent": null,
+        "lft": 1,
+        "rght": 2,
+        "tree_id": 1,
+        "level": 0
+    }
+},
+{
+    "model": "inventory.product",
+    "pk": 1,
+    "fields": {
+        "name": "Vita Electric Bike",
+        "slug": "vita_electric_bike",
+        "web_id": "s8d4f4654789",
+        "description": "Vita electric car",
+        "category": 1,
+        "thumbnail": "product_images/OIG1.jpg",
+        "is_active": true,
+        "created_at": "2024-03-22T14:55:52.681Z",
+        "updated_at": "2024-04-04T13:48:52.658Z"
+    }
+},
+{
+    "model": "inventory.brand",
+    "pk": 1,
+    "fields": {
+        "name": "Bosch"
+    }
+},
+{
+    "model": "inventory.productattribute",
+    "pk": 1,
+    "fields": {
+        "name": "Frame",
+        "description": "A bicycle frame is the main component of a bicycle, onto which wheels and other components are fitted. The modern and most common frame design for an upright bicycle is based on the safety bicycle, and consists of two triangles: a main triangle and a paired rear triangle. This is known as the diamond frame.[1] Frames are required to be strong, stiff and light, which they do by combining different materials and shapes.",
+        "category": null,
+        "is_selective": false
+    }
+},
+{
+    "model": "inventory.productattribute",
+    "pk": 2,
+    "fields": {
+        "name": "Fork",
+        "description": "A bicycle fork is the part of a bicycle that holds the front wheel.\r\n\r\nA fork typically consists of two blades which are joined at the top by a fork crown. The crown is often at the front. Most suspension forks have an arch connecting the two side of the lowers (the part connected to the axle.) It is often in front of the stanchions (shaft the lowers slide on) but not always. Above the crown, a steerer tube attaches the fork to the bicycle and the handlebars (via a stem) allowing the rider to steer the bicycle. The steerer tube of the fork interfaces with the frame via bearings called a headset mounted in the head tube.",
+        "category": null,
+        "is_selective": false
+    }
+},
+{
+    "model": "inventory.productattribute",
+    "pk": 3,
+    "fields": {
+        "name": "Shock",
+        "description": "Bicycle suspension is the system, or systems, used to suspend the rider and bicycle in order to insulate them from the roughness of the terrain.",
+        "category": null,
+        "is_selective": false
+    }
+},
+{
+    "model": "inventory.productattribute",
+    "pk": 4,
+    "fields": {
+        "name": "Wheel front",
+        "description": "",
+        "category": null,
+        "is_selective": false
+    }
+},
+{
+    "model": "inventory.productattribute",
+    "pk": 5,
+    "fields": {
+        "name": "Wheel rear",
+        "description": "",
+        "category": null,
+        "is_selective": false
+    }
+},
+{
+    "model": "inventory.productattribute",
+    "pk": 6,
+    "fields": {
+        "name": "Tyre",
+        "description": "A bicycle tire is a tire that fits on the wheel of a bicycle or similar vehicle",
+        "category": null,
+        "is_selective": false
+    }
+},
+{
+    "model": "inventory.productattribute",
+    "pk": 7,
+    "fields": {
+        "name": "Battery",
+        "description": "",
+        "category": null,
+        "is_selective": false
+    }
+},
+{
+    "model": "inventory.productattribute",
+    "pk": 8,
+    "fields": {
+        "name": "Charger",
+        "description": "",
+        "category": null,
+        "is_selective": false
+    }
+},
+{
+    "model": "inventory.productattribute",
+    "pk": 9,
+    "fields": {
+        "name": "Computer",
+        "description": "",
+        "category": null,
+        "is_selective": false
+    }
+},
+{
+    "model": "inventory.productattribute",
+    "pk": 10,
+    "fields": {
+        "name": "Motor",
+        "description": "",
+        "category": null,
+        "is_selective": false
+    }
+},
+{
+    "model": "inventory.productattribute",
+    "pk": 11,
+    "fields": {
+        "name": "Shifter",
+        "description": "A bicycle shifter or gear control or gear levers is a component used to control the gearing mechanisms and select the desired gear ratio. Typically, they operate either a derailleur mechanism or an internal hub gear mechanism. In either case, the control is operated by moving a cable that connects the shifter to the gear mechanism.",
+        "category": null,
+        "is_selective": false
+    }
+},
+{
+    "model": "inventory.productattribute",
+    "pk": 12,
+    "fields": {
+        "name": "Rear derailleur",
+        "description": "",
+        "category": null,
+        "is_selective": false
+    }
+},
+{
+    "model": "inventory.productattribute",
+    "pk": 13,
+    "fields": {
+        "name": "Brake",
+        "description": "",
+        "category": null,
+        "is_selective": false
+    }
+},
+{
+    "model": "inventory.productattribute",
+    "pk": 14,
+    "fields": {
+        "name": "Weight",
+        "description": "",
+        "category": null,
+        "is_selective": false
+    }
+},
+{
+    "model": "inventory.productattribute",
+    "pk": 15,
+    "fields": {
+        "name": "Colour",
+        "description": "",
+        "category": null,
+        "is_selective": true
+    }
+},
+{
+    "model": "inventory.productattribute",
+    "pk": 16,
+    "fields": {
+        "name": "Size",
+        "description": "",
+        "category": null,
+        "is_selective": true
+    }
+},
+{
+    "model": "inventory.producttype",
+    "pk": 1,
+    "fields": {
+        "name": "Bike"
+    }
+},
+{
+    "model": "inventory.productattributevalue",
+    "pk": 1,
+    "fields": {
+        "product_attribute": 1,
+        "attribute_value": "Size: S Alpha Platinum Aluminium, curved top tube, Removable Integrated Battery (RIB), tapered head tube, Control Freak internal routing, magnesium rocker link, Motor Armour, Mino Link, ABP, Boost148, 12 mm thru axle, 150 mm travel",
+        "attribute_value_image": null
+    }
+},
+{
+    "model": "inventory.productattributevalue",
+    "pk": 2,
+    "fields": {
+        "product_attribute": 1,
+        "attribute_value": "Size: M, L, XL Alpha Platinum Aluminium, Removable Integrated Battery (RIB), tapered head tube, Control Freak internal routing, magnesium rocker link, Motor Armour, Mino Link, ABP, Boost148, 12 mm thru axle, 150 mm travel",
+        "attribute_value_image": null
+    }
+},
+{
+    "model": "inventory.productattributevalue",
+    "pk": 3,
+    "fields": {
+        "product_attribute": 2,
+        "attribute_value": "RockShox Domain RC, DebonAir, Motion Control damper, lockout, tapered steerer, 44 mm offset, oversized crown for eMTB, Boost110, 15 mm Maxle Stealth, 160 mm travel",
+        "attribute_value_image": null
+    }
+},
+{
+    "model": "inventory.productattributevalue",
+    "pk": 4,
+    "fields": {
+        "product_attribute": 3,
+        "attribute_value": "RockShox Deluxe Select+ RT, 230 mm x 57.5 mm",
+        "attribute_value_image": null
+    }
+},
+{
+    "model": "inventory.productattributevalue",
+    "pk": 5,
+    "fields": {
+        "product_attribute": 4,
+        "attribute_value": "Bontrager Line Comp 30, Tubeless Ready, 6-bolt, Boost110, 15 mm thru axle, 29\"",
+        "attribute_value_image": null
+    }
+},
+{
+    "model": "inventory.productattributevalue",
+    "pk": 6,
+    "fields": {
+        "product_attribute": 5,
+        "attribute_value": "Bontrager Line Comp 30, Tubeless Ready, Rapid Drive 108, 6-bolt, Boost148, 12 mm thru axle, 29\"",
+        "attribute_value_image": null
+    }
+},
+{
+    "model": "inventory.productattributevalue",
+    "pk": 7,
+    "fields": {
+        "product_attribute": 6,
+        "attribute_value": "Bontrager XR5 Team Issue, Tubeless Ready, Inner Strength casing, aramid bead, 60 tpi, 29x2.50\"",
+        "attribute_value_image": null
+    }
+},
+{
+    "model": "inventory.productattributevalue",
+    "pk": 8,
+    "fields": {
+        "product_attribute": 7,
+        "attribute_value": "Bosch PowerTube 625 Wh, smart system",
+        "attribute_value_image": null
+    }
+},
+{
+    "model": "inventory.productattributevalue",
+    "pk": 9,
+    "fields": {
+        "product_attribute": 8,
+        "attribute_value": "Bosch standard 4A, 230V, smart system",
+        "attribute_value_image": null
+    }
+},
+{
+    "model": "inventory.productattributevalue",
+    "pk": 10,
+    "fields": {
+        "product_attribute": 9,
+        "attribute_value": "Bosch LED remote, smart system",
+        "attribute_value_image": null
+    }
+},
+{
+    "model": "inventory.productattributevalue",
+    "pk": 11,
+    "fields": {
+        "product_attribute": 10,
+        "attribute_value": "Bosch Performance Line CX, smart system, magnesium motor body, 85 Nm",
+        "attribute_value_image": null
+    }
+},
+{
+    "model": "inventory.productattributevalue",
+    "pk": 12,
+    "fields": {
+        "product_attribute": 11,
+        "attribute_value": "SRAM AXS POD",
+        "attribute_value_image": null
+    }
+},
+{
+    "model": "inventory.productattributevalue",
+    "pk": 13,
+    "fields": {
+        "product_attribute": 12,
+        "attribute_value": "SRAM GX Eagle AXS, T-Type",
+        "attribute_value_image": null
+    }
+},
+{
+    "model": "inventory.productattributevalue",
+    "pk": 14,
+    "fields": {
+        "product_attribute": 13,
+        "attribute_value": "SRAM DB 8 4-piston hydraulic disc",
+        "attribute_value_image": null
+    }
+},
+{
+    "model": "inventory.productattributevalue",
+    "pk": 15,
+    "fields": {
+        "product_attribute": 14,
+        "attribute_value": "M - 23.70 kg / 52.25 lbs (with TLR sealant, no tubes)",
+        "attribute_value_image": null
+    }
+},
+{
+    "model": "inventory.productattributevalue",
+    "pk": 16,
+    "fields": {
+        "product_attribute": 15,
+        "attribute_value": "Black",
+        "attribute_value_image": null
+    }
+},
+{
+    "model": "inventory.productattributevalue",
+    "pk": 17,
+    "fields": {
+        "product_attribute": 15,
+        "attribute_value": "White",
+        "attribute_value_image": null
+    }
+},
+{
+    "model": "inventory.productattributevalue",
+    "pk": 18,
+    "fields": {
+        "product_attribute": 16,
+        "attribute_value": "M",
+        "attribute_value_image": null
+    }
+},
+{
+    "model": "inventory.productattributevalue",
+    "pk": 19,
+    "fields": {
+        "product_attribute": 16,
+        "attribute_value": "S",
+        "attribute_value_image": null
+    }
+},
+{
+    "model": "inventory.productattributevalue",
+    "pk": 20,
+    "fields": {
+        "product_attribute": 16,
+        "attribute_value": "L",
+        "attribute_value_image": null
+    }
+},
+{
+    "model": "inventory.productattributevalue",
+    "pk": 21,
+    "fields": {
+        "product_attribute": 16,
+        "attribute_value": "XL",
+        "attribute_value_image": null
+    }
+},
+{
+    "model": "inventory.productinventory",
+    "pk": 1,
+    "fields": {
+        "sku": "q7w8e9r4t5y6",
+        "upc": "a4s5d6",
+        "product_type": 1,
+        "product": 1,
+        "brand": 1,
+        "retail_price": 64,
+        "store_price": 74,
+        "weight": 14.0,
+        "created_at": "2024-03-22T14:59:03.804Z",
+        "updated_at": "2024-04-04T20:36:34.297Z",
+        "is_active": true,
+        "is_deleted": false,
+        "is_default": true,
+        "is_digital": false
+    }
+},
+{
+    "model": "inventory.media",
+    "pk": 1,
+    "fields": {
+        "product_inventory": 1,
+        "img_url": "product_inventory_images/bosch-vita-electric-bike-black2.jpg",
+        "alt_text": "bosch-vita-ebike-black",
+        "is_feature": false,
+        "created_at": "2024-04-05T08:08:59.026Z",
+        "updated_at": "2024-04-05T08:08:59.027Z"
+    }
+},
+{
+    "model": "inventory.media",
+    "pk": 2,
+    "fields": {
+        "product_inventory": 1,
+        "img_url": "product_inventory_images/bosch-vita-elctric-bike-black3.jpg",
+        "alt_text": "bosch-vita-ebike-black",
+        "is_feature": false,
+        "created_at": "2024-04-05T08:09:21.683Z",
+        "updated_at": "2024-04-05T08:09:21.683Z"
+    }
+},
+{
+    "model": "inventory.media",
+    "pk": 3,
+    "fields": {
+        "product_inventory": 1,
+        "img_url": "product_inventory_images/bosch-vita-elec-bike-black4.jpg",
+        "alt_text": "bosch-vita-ebike-black",
+        "is_feature": false,
+        "created_at": "2024-04-05T08:09:39.627Z",
+        "updated_at": "2024-04-05T08:09:39.627Z"
+    }
+},
+{
+    "model": "inventory.productattributevalues",
+    "pk": 1,
+    "fields": {
+        "attributevalues": 16,
+        "productinventory": 1
+    }
+},
+{
+    "model": "inventory.productattributevalues",
+    "pk": 2,
+    "fields": {
+        "attributevalues": 1,
+        "productinventory": 1
+    }
+},
+{
+    "model": "inventory.productattributevalues",
+    "pk": 3,
+    "fields": {
+        "attributevalues": 3,
+        "productinventory": 1
+    }
+},
+{
+    "model": "inventory.productattributevalues",
+    "pk": 4,
+    "fields": {
+        "attributevalues": 4,
+        "productinventory": 1
+    }
+},
+{
+    "model": "inventory.productattributevalues",
+    "pk": 5,
+    "fields": {
+        "attributevalues": 5,
+        "productinventory": 1
+    }
+},
+{
+    "model": "inventory.productattributevalues",
+    "pk": 6,
+    "fields": {
+        "attributevalues": 6,
+        "productinventory": 1
+    }
+},
+{
+    "model": "inventory.productattributevalues",
+    "pk": 7,
+    "fields": {
+        "attributevalues": 7,
+        "productinventory": 1
+    }
+},
+{
+    "model": "inventory.productattributevalues",
+    "pk": 8,
+    "fields": {
+        "attributevalues": 10,
+        "productinventory": 1
+    }
+},
+{
+    "model": "inventory.productattributevalues",
+    "pk": 9,
+    "fields": {
+        "attributevalues": 11,
+        "productinventory": 1
+    }
+},
+{
+    "model": "inventory.productattributevalues",
+    "pk": 10,
+    "fields": {
+        "attributevalues": 12,
+        "productinventory": 1
+    }
+},
+{
+    "model": "inventory.productattributevalues",
+    "pk": 11,
+    "fields": {
+        "attributevalues": 13,
+        "productinventory": 1
+    }
+},
+{
+    "model": "inventory.productattributevalues",
+    "pk": 12,
+    "fields": {
+        "attributevalues": 14,
+        "productinventory": 1
+    }
+},
+{
+    "model": "inventory.productattributevalues",
+    "pk": 13,
+    "fields": {
+        "attributevalues": 15,
+        "productinventory": 1
+    }
+}
+]
