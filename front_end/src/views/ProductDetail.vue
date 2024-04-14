@@ -31,6 +31,12 @@
                 </div>
             </div>
         </div>
+        <div v-for="attr in getSelectiveProductAttributes(productInventories)" class="box m-2">
+            <h3>{{ attr.product_attribute?.name }}</h3>
+            <div v-for="value in filterAttributeValues(getSelectiveProductAttributes(productInventories), attr)">
+                {{ JSON.stringify(value)}}
+            </div>
+        </div>
     <div class="skeleton-block m-2 is-dark has-text-primary-00 p-2">
         <p>{{ product?.description }}</p>
     </div>
@@ -46,19 +52,14 @@
 
 <script>
 import axios from "axios"
-import {ref, reactive} from "vue"
 export default {
     name : "productDetail",
     data() {
         return {
             product : null,
             productInventories: [],
-            productAttributes: [],
             mainImage: {current_image: "", previus_image: ""}
         }
-    },
-    mounted() {
-        this.getProduct()
     },
     methods: {
         getProduct() {
@@ -70,14 +71,34 @@ export default {
                     this.productInventories = response.data
                     this.product = response.data[0].product
                     this.mainImage.current_image = this.product?.get_thumbnail
-                    // alert(JSON.stringify(this.productInventories))
-                    // document.getElementById("mainString").
-                    
                 })
                 .catch(error => {
                     console.log(error)
                 });
         },
+        getProductAttributes(productInventories) {
+            const attributeList = []
+            if (productInventories?.length >= 1) {
+                for (let pI in productInventories) {
+                    attributeList.push(productInventories[pI]?.attributes);
+                }
+            }
+            return attributeList.flat()
+        },
+        getSelectiveProductAttributes(productInventories) {
+            return this.getProductAttributes(productInventories).filter((attr) => attr?.product_attribute.is_selective === true)
+        },
+        filterAttributeValues(attrs, attr){
+            const attribute_values = []
+            attrs.filter((attribute) => attribute.product_attribute.id == attr.product_attribute.id).forEach(element => {
+                attribute_values.push(element);
+            });
+            return attribute_values
+        }
+    },
+    mounted() {
+        this.getProduct(),
+        this.getProductAttributes()
     },
 }
 </script>
