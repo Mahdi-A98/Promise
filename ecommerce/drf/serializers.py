@@ -4,6 +4,7 @@ from inventory.models import (
     )
 
 from rest_framework import serializers
+from django.conf import settings
 
 
 class ProductSerializer(serializers.ModelSerializer):
@@ -20,6 +21,13 @@ class ProductAttributeValueSerializers(serializers.ModelSerializer):
         depth = 2
         exclude = ["id"]
         read_only = True
+
+    def to_representation(self, instance):
+        data = super().to_representation(instance)
+        attribute_image = data["attribute_value_image"] or {}
+        if attribute_image:
+            data["attribute_value_image"]["get_image"] = settings.BASE_URL + attribute_image.get("image", "")
+        return data
 
 
 class CategorySerializer(serializers.ModelSerializer):
