@@ -3,7 +3,8 @@ from .models import (
     Product, ProductType, ProductInventory,
     Category, Brand, Stock, Media,
     ProductAttribute, ProductAttributeValue,
-    ProductAttributeValues, ProductTypeAttribute
+    ProductAttributeValues, ProductTypeAttribute,
+    ProductAttributeCategory, ProductAttributeValueImage
     )
 # Register your models here.
 
@@ -18,3 +19,5 @@ admin.site.register(ProductAttribute)
 admin.site.register(ProductAttributeValue)
 admin.site.register(ProductAttributeValues)
 admin.site.register(ProductTypeAttribute)
+admin.site.register(ProductAttributeValueImage)
+admin.site.register(ProductAttributeCategory)
