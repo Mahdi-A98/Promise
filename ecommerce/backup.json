@@ -1,0 +1,748 @@
+[
+{
+    "model": "inventory.category",
+    "pk": 1,
+    "fields": {
+        "name": "Entertainments",
+        "slug": "entertainments",
+        "is_active": true,
+        "parent": null,
+        "lft": 1,
+        "rght": 2,
+        "tree_id": 1,
+        "level": 0
+    }
+},
+{
+    "model": "inventory.product",
+    "pk": 1,
+    "fields": {
+        "name": "Vita Electric Bike",
+        "slug": "vita_electric_bike",
+        "web_id": "s8d4f4654789",
+        "description": "Vita electric car",
+        "category": 1,
+        "thumbnail": "product_images/OIG1.jpg",
+        "is_active": true,
+        "created_at": "2024-03-22T14:55:52.681Z",
+        "updated_at": "2024-04-04T13:48:52.658Z"
+    }
+},
+{
+    "model": "inventory.brand",
+    "pk": 1,
+    "fields": {
+        "name": "Bosch"
+    }
+},
+{
+    "model": "inventory.productattribute",
+    "pk": 1,
+    "fields": {
+        "name": "Frame",
+        "description": "A bicycle frame is the main component of a bicycle, onto which wheels and other components are fitted. The modern and most common frame design for an upright bicycle is based on the safety bicycle, and consists of two triangles: a main triangle and a paired rear triangle. This is known as the diamond frame.[1] Frames are required to be strong, stiff and light, which they do by combining different materials and shapes.",
+        "category": null,
+        "is_selective": false
+    }
+},
+{
+    "model": "inventory.productattribute",
+    "pk": 2,
+    "fields": {
+        "name": "Fork",
+        "description": "A bicycle fork is the part of a bicycle that holds the front wheel.\r\n\r\nA fork typically consists of two blades which are joined at the top by a fork crown. The crown is often at the front. Most suspension forks have an arch connecting the two side of the lowers (the part connected to the axle.) It is often in front of the stanchions (shaft the lowers slide on) but not always. Above the crown, a steerer tube attaches the fork to the bicycle and the handlebars (via a stem) allowing the rider to steer the bicycle. The steerer tube of the fork interfaces with the frame via bearings called a headset mounted in the head tube.",
+        "category": null,
+        "is_selective": false
+    }
+},
+{
+    "model": "inventory.productattribute",
+    "pk": 3,
+    "fields": {
+        "name": "Shock",
+        "description": "Bicycle suspension is the system, or systems, used to suspend the rider and bicycle in order to insulate them from the roughness of the terrain.",
+        "category": null,
+        "is_selective": false
+    }
+},
+{
+    "model": "inventory.productattribute",
+    "pk": 4,
+    "fields": {
+        "name": "Wheel front",
+        "description": "",
+        "category": null,
+        "is_selective": false
+    }
+},
+{
+    "model": "inventory.productattribute",
+    "pk": 5,
+    "fields": {
+        "name": "Wheel rear",
+        "description": "",
+        "category": null,
+        "is_selective": false
+    }
+},
+{
+    "model": "inventory.productattribute",
+    "pk": 6,
+    "fields": {
+        "name": "Tyre",
+        "description": "A bicycle tire is a tire that fits on the wheel of a bicycle or similar vehicle",
+        "category": null,
+        "is_selective": false
+    }
+},
+{
+    "model": "inventory.productattribute",
+    "pk": 7,
+    "fields": {
+        "name": "Battery",
+        "description": "",
+        "category": null,
+        "is_selective": false
+    }
+},
+{
+    "model": "inventory.productattribute",
+    "pk": 8,
+    "fields": {
+        "name": "Charger",
+        "description": "",
+        "category": null,
+        "is_selective": false
+    }
+},
+{
+    "model": "inventory.productattribute",
+    "pk": 9,
+    "fields": {
+        "name": "Computer",
+        "description": "",
+        "category": null,
+        "is_selective": false
+    }
+},
+{
+    "model": "inventory.productattribute",
+    "pk": 10,
+    "fields": {
+        "name": "Motor",
+        "description": "",
+        "category": null,
+        "is_selective": false
+    }
+},
+{
+    "model": "inventory.productattribute",
+    "pk": 11,
+    "fields": {
+        "name": "Shifter",
+        "description": "A bicycle shifter or gear control or gear levers is a component used to control the gearing mechanisms and select the desired gear ratio. Typically, they operate either a derailleur mechanism or an internal hub gear mechanism. In either case, the control is operated by moving a cable that connects the shifter to the gear mechanism.",
+        "category": null,
+        "is_selective": false
+    }
+},
+{
+    "model": "inventory.productattribute",
+    "pk": 12,
+    "fields": {
+        "name": "Rear derailleur",
+        "description": "",
+        "category": null,
+        "is_selective": false
+    }
+},
+{
+    "model": "inventory.productattribute",
+    "pk": 13,
+    "fields": {
+        "name": "Brake",
+        "description": "",
+        "category": null,
+        "is_selective": false
+    }
+},
+{
+    "model": "inventory.productattribute",
+    "pk": 14,
+    "fields": {
+        "name": "Weight",
+        "description": "",
+        "category": null,
+        "is_selective": false
+    }
+},
+{
+    "model": "inventory.productattribute",
+    "pk": 15,
+    "fields": {
+        "name": "Colour",
+        "description": "",
+        "category": null,
+        "is_selective": true
+    }
+},
+{
+    "model": "inventory.productattribute",
+    "pk": 16,
+    "fields": {
+        "name": "Size",
+        "description": "",
+        "category": null,
+        "is_selective": true
+    }
+},
+{
+    "model": "inventory.producttype",
+    "pk": 1,
+    "fields": {
+        "name": "Bike"
+    }
+},
+{
+    "model": "inventory.productattributevalueimage",
+    "pk": 1,
+    "fields": {
+        "image": "product_attribute_value_images/black.jpg",
+        "alt_text": "black",
+        "defualt_width": 30,
+        "defualt_height": 30,
+        "default_border_radious": 50
+    }
+},
+{
+    "model": "inventory.productattributevalueimage",
+    "pk": 2,
+    "fields": {
+        "image": "product_attribute_value_images/white.jpg",
+        "alt_text": "white",
+        "defualt_width": 30,
+        "defualt_height": 30,
+        "default_border_radious": 50
+    }
+},
+{
+    "model": "inventory.productattributevalue",
+    "pk": 1,
+    "fields": {
+        "product_attribute": 1,
+        "attribute_value": "Size: S Alpha Platinum Aluminium, curved top tube, Removable Integrated Battery (RIB), tapered head tube, Control Freak internal routing, magnesium rocker link, Motor Armour, Mino Link, ABP, Boost148, 12 mm thru axle, 150 mm travel",
+        "attribute_value_image": null
+    }
+},
+{
+    "model": "inventory.productattributevalue",
+    "pk": 2,
+    "fields": {
+        "product_attribute": 1,
+        "attribute_value": "Size: M, L, XL Alpha Platinum Aluminium, Removable Integrated Battery (RIB), tapered head tube, Control Freak internal routing, magnesium rocker link, Motor Armour, Mino Link, ABP, Boost148, 12 mm thru axle, 150 mm travel",
+        "attribute_value_image": null
+    }
+},
+{
+    "model": "inventory.productattributevalue",
+    "pk": 3,
+    "fields": {
+        "product_attribute": 2,
+        "attribute_value": "RockShox Domain RC, DebonAir, Motion Control damper, lockout, tapered steerer, 44 mm offset, oversized crown for eMTB, Boost110, 15 mm Maxle Stealth, 160 mm travel",
+        "attribute_value_image": null
+    }
+},
+{
+    "model": "inventory.productattributevalue",
+    "pk": 4,
+    "fields": {
+        "product_attribute": 3,
+        "attribute_value": "RockShox Deluxe Select+ RT, 230 mm x 57.5 mm",
+        "attribute_value_image": null
+    }
+},
+{
+    "model": "inventory.productattributevalue",
+    "pk": 5,
+    "fields": {
+        "product_attribute": 4,
+        "attribute_value": "Bontrager Line Comp 30, Tubeless Ready, 6-bolt, Boost110, 15 mm thru axle, 29\"",
+        "attribute_value_image": null
+    }
+},
+{
+    "model": "inventory.productattributevalue",
+    "pk": 6,
+    "fields": {
+        "product_attribute": 5,
+        "attribute_value": "Bontrager Line Comp 30, Tubeless Ready, Rapid Drive 108, 6-bolt, Boost148, 12 mm thru axle, 29\"",
+        "attribute_value_image": null
+    }
+},
+{
+    "model": "inventory.productattributevalue",
+    "pk": 7,
+    "fields": {
+        "product_attribute": 6,
+        "attribute_value": "Bontrager XR5 Team Issue, Tubeless Ready, Inner Strength casing, aramid bead, 60 tpi, 29x2.50\"",
+        "attribute_value_image": null
+    }
+},
+{
+    "model": "inventory.productattributevalue",
+    "pk": 8,
+    "fields": {
+        "product_attribute": 7,
+        "attribute_value": "Bosch PowerTube 625 Wh, smart system",
+        "attribute_value_image": null
+    }
+},
+{
+    "model": "inventory.productattributevalue",
+    "pk": 9,
+    "fields": {
+        "product_attribute": 8,
+        "attribute_value": "Bosch standard 4A, 230V, smart system",
+        "attribute_value_image": null
+    }
+},
+{
+    "model": "inventory.productattributevalue",
+    "pk": 10,
+    "fields": {
+        "product_attribute": 9,
+        "attribute_value": "Bosch LED remote, smart system",
+        "attribute_value_image": null
+    }
+},
+{
+    "model": "inventory.productattributevalue",
+    "pk": 11,
+    "fields": {
+        "product_attribute": 10,
+        "attribute_value": "Bosch Performance Line CX, smart system, magnesium motor body, 85 Nm",
+        "attribute_value_image": null
+    }
+},
+{
+    "model": "inventory.productattributevalue",
+    "pk": 12,
+    "fields": {
+        "product_attribute": 11,
+        "attribute_value": "SRAM AXS POD",
+        "attribute_value_image": null
+    }
+},
+{
+    "model": "inventory.productattributevalue",
+    "pk": 13,
+    "fields": {
+        "product_attribute": 12,
+        "attribute_value": "SRAM GX Eagle AXS, T-Type",
+        "attribute_value_image": null
+    }
+},
+{
+    "model": "inventory.productattributevalue",
+    "pk": 14,
+    "fields": {
+        "product_attribute": 13,
+        "attribute_value": "SRAM DB 8 4-piston hydraulic disc",
+        "attribute_value_image": null
+    }
+},
+{
+    "model": "inventory.productattributevalue",
+    "pk": 15,
+    "fields": {
+        "product_attribute": 14,
+        "attribute_value": "M - 23.70 kg / 52.25 lbs (with TLR sealant, no tubes)",
+        "attribute_value_image": null
+    }
+},
+{
+    "model": "inventory.productattributevalue",
+    "pk": 16,
+    "fields": {
+        "product_attribute": 15,
+        "attribute_value": "Black",
+        "attribute_value_image": 1
+    }
+},
+{
+    "model": "inventory.productattributevalue",
+    "pk": 17,
+    "fields": {
+        "product_attribute": 15,
+        "attribute_value": "White",
+        "attribute_value_image": 2
+    }
+},
+{
+    "model": "inventory.productattributevalue",
+    "pk": 18,
+    "fields": {
+        "product_attribute": 16,
+        "attribute_value": "M",
+        "attribute_value_image": null
+    }
+},
+{
+    "model": "inventory.productattributevalue",
+    "pk": 19,
+    "fields": {
+        "product_attribute": 16,
+        "attribute_value": "S",
+        "attribute_value_image": null
+    }
+},
+{
+    "model": "inventory.productattributevalue",
+    "pk": 20,
+    "fields": {
+        "product_attribute": 16,
+        "attribute_value": "L",
+        "attribute_value_image": null
+    }
+},
+{
+    "model": "inventory.productattributevalue",
+    "pk": 21,
+    "fields": {
+        "product_attribute": 16,
+        "attribute_value": "XL",
+        "attribute_value_image": null
+    }
+},
+{
+    "model": "inventory.productinventory",
+    "pk": 1,
+    "fields": {
+        "sku": "VEB-black-small",
+        "upc": "a4s5d6",
+        "product_type": 1,
+        "product": 1,
+        "brand": 1,
+        "retail_price": 64,
+        "store_price": 74,
+        "weight": 14.0,
+        "created_at": "2024-03-22T14:59:03.804Z",
+        "updated_at": "2024-04-10T17:41:04.035Z",
+        "is_active": true,
+        "is_deleted": false,
+        "is_default": true,
+        "is_digital": false
+    }
+},
+{
+    "model": "inventory.productinventory",
+    "pk": 2,
+    "fields": {
+        "sku": "VEB-white-medium",
+        "upc": "8d5gh4",
+        "product_type": 1,
+        "product": 1,
+        "brand": 1,
+        "retail_price": 64,
+        "store_price": 59,
+        "weight": 17.0,
+        "created_at": "2024-04-10T17:35:29.055Z",
+        "updated_at": "2024-04-10T17:42:00.880Z",
+        "is_active": true,
+        "is_deleted": false,
+        "is_default": false,
+        "is_digital": false
+    }
+},
+{
+    "model": "inventory.media",
+    "pk": 1,
+    "fields": {
+        "product_inventory": 1,
+        "img_url": "product_inventory_images/bosch-vita-electric-bike-black2.jpg",
+        "alt_text": "bosch-vita-ebike-black",
+        "is_feature": false,
+        "created_at": "2024-04-05T08:08:59.026Z",
+        "updated_at": "2024-04-05T08:08:59.027Z"
+    }
+},
+{
+    "model": "inventory.media",
+    "pk": 2,
+    "fields": {
+        "product_inventory": 1,
+        "img_url": "product_inventory_images/bosch-vita-elctric-bike-black3.jpg",
+        "alt_text": "bosch-vita-ebike-black",
+        "is_feature": false,
+        "created_at": "2024-04-05T08:09:21.683Z",
+        "updated_at": "2024-04-05T08:09:21.683Z"
+    }
+},
+{
+    "model": "inventory.media",
+    "pk": 3,
+    "fields": {
+        "product_inventory": 1,
+        "img_url": "product_inventory_images/bosch-vita-elec-bike-black4.jpg",
+        "alt_text": "bosch-vita-ebike-black",
+        "is_feature": false,
+        "created_at": "2024-04-05T08:09:39.627Z",
+        "updated_at": "2024-04-05T08:09:39.627Z"
+    }
+},
+{
+    "model": "inventory.media",
+    "pk": 4,
+    "fields": {
+        "product_inventory": 2,
+        "img_url": "product_inventory_images/bosch-ebike-vita-white1.jpg",
+        "alt_text": "white bosch electric bike",
+        "is_feature": false,
+        "created_at": "2024-04-12T06:48:12.927Z",
+        "updated_at": "2024-04-12T06:48:12.927Z"
+    }
+},
+{
+    "model": "inventory.media",
+    "pk": 5,
+    "fields": {
+        "product_inventory": 2,
+        "img_url": "product_inventory_images/bosch-vita-electric-bike-white2.jpg",
+        "alt_text": "white bosch electric bike",
+        "is_feature": false,
+        "created_at": "2024-04-12T06:48:44.188Z",
+        "updated_at": "2024-04-12T06:48:44.188Z"
+    }
+},
+{
+    "model": "inventory.productattributevalues",
+    "pk": 1,
+    "fields": {
+        "attributevalues": 16,
+        "productinventory": 1
+    }
+},
+{
+    "model": "inventory.productattributevalues",
+    "pk": 2,
+    "fields": {
+        "attributevalues": 1,
+        "productinventory": 1
+    }
+},
+{
+    "model": "inventory.productattributevalues",
+    "pk": 3,
+    "fields": {
+        "attributevalues": 3,
+        "productinventory": 1
+    }
+},
+{
+    "model": "inventory.productattributevalues",
+    "pk": 4,
+    "fields": {
+        "attributevalues": 4,
+        "productinventory": 1
+    }
+},
+{
+    "model": "inventory.productattributevalues",
+    "pk": 5,
+    "fields": {
+        "attributevalues": 5,
+        "productinventory": 1
+    }
+},
+{
+    "model": "inventory.productattributevalues",
+    "pk": 6,
+    "fields": {
+        "attributevalues": 6,
+        "productinventory": 1
+    }
+},
+{
+    "model": "inventory.productattributevalues",
+    "pk": 7,
+    "fields": {
+        "attributevalues": 7,
+        "productinventory": 1
+    }
+},
+{
+    "model": "inventory.productattributevalues",
+    "pk": 8,
+    "fields": {
+        "attributevalues": 10,
+        "productinventory": 1
+    }
+},
+{
+    "model": "inventory.productattributevalues",
+    "pk": 9,
+    "fields": {
+        "attributevalues": 11,
+        "productinventory": 1
+    }
+},
+{
+    "model": "inventory.productattributevalues",
+    "pk": 10,
+    "fields": {
+        "attributevalues": 12,
+        "productinventory": 1
+    }
+},
+{
+    "model": "inventory.productattributevalues",
+    "pk": 11,
+    "fields": {
+        "attributevalues": 13,
+        "productinventory": 1
+    }
+},
+{
+    "model": "inventory.productattributevalues",
+    "pk": 12,
+    "fields": {
+        "attributevalues": 14,
+        "productinventory": 1
+    }
+},
+{
+    "model": "inventory.productattributevalues",
+    "pk": 13,
+    "fields": {
+        "attributevalues": 15,
+        "productinventory": 1
+    }
+},
+{
+    "model": "inventory.productattributevalues",
+    "pk": 14,
+    "fields": {
+        "attributevalues": 2,
+        "productinventory": 2
+    }
+},
+{
+    "model": "inventory.productattributevalues",
+    "pk": 15,
+    "fields": {
+        "attributevalues": 3,
+        "productinventory": 2
+    }
+},
+{
+    "model": "inventory.productattributevalues",
+    "pk": 16,
+    "fields": {
+        "attributevalues": 4,
+        "productinventory": 2
+    }
+},
+{
+    "model": "inventory.productattributevalues",
+    "pk": 17,
+    "fields": {
+        "attributevalues": 5,
+        "productinventory": 2
+    }
+},
+{
+    "model": "inventory.productattributevalues",
+    "pk": 18,
+    "fields": {
+        "attributevalues": 7,
+        "productinventory": 2
+    }
+},
+{
+    "model": "inventory.productattributevalues",
+    "pk": 19,
+    "fields": {
+        "attributevalues": 8,
+        "productinventory": 2
+    }
+},
+{
+    "model": "inventory.productattributevalues",
+    "pk": 20,
+    "fields": {
+        "attributevalues": 9,
+        "productinventory": 2
+    }
+},
+{
+    "model": "inventory.productattributevalues",
+    "pk": 21,
+    "fields": {
+        "attributevalues": 10,
+        "productinventory": 2
+    }
+},
+{
+    "model": "inventory.productattributevalues",
+    "pk": 22,
+    "fields": {
+        "attributevalues": 11,
+        "productinventory": 2
+    }
+},
+{
+    "model": "inventory.productattributevalues",
+    "pk": 23,
+    "fields": {
+        "attributevalues": 12,
+        "productinventory": 2
+    }
+},
+{
+    "model": "inventory.productattributevalues",
+    "pk": 24,
+    "fields": {
+        "attributevalues": 13,
+        "productinventory": 2
+    }
+},
+{
+    "model": "inventory.productattributevalues",
+    "pk": 25,
+    "fields": {
+        "attributevalues": 14,
+        "productinventory": 2
+    }
+},
+{
+    "model": "inventory.productattributevalues",
+    "pk": 26,
+    "fields": {
+        "attributevalues": 15,
+        "productinventory": 2
+    }
+},
+{
+    "model": "inventory.productattributevalues",
+    "pk": 27,
+    "fields": {
+        "attributevalues": 17,
+        "productinventory": 2
+    }
+},
+{
+    "model": "inventory.productattributevalues",
+    "pk": 28,
+    "fields": {
+        "attributevalues": 18,
+        "productinventory": 2
+    }
+},
+{
+    "model": "inventory.productattributevalues",
+    "pk": 29,
+    "fields": {
+        "attributevalues": 19,
+        "productinventory": 1
+    }
+}
+]
