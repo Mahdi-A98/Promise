@@ -96,7 +96,11 @@ class ProductAttribute(models.Model):
     name = models.CharField(verbose_name=_("name"), max_length=250, unique=True)
     description = models.TextField(verbose_name=_("description"), null=True, blank=True)
     category = models.ForeignKey(to=ProductAttributeCategory, null=True, blank=True, on_delete=models.SET_NULL)
-    
+    is_selective = models.BooleanField(_("is selective"), default=False)
+
+    class Meta:
+        verbose_name = _("attribute")
+        verbose_name_plural = _("attributes")
     def __str__(self):
         return self.name
 
@@ -122,6 +126,9 @@ class ProductAttributeValueImage(models.Model):
 
     def get_image(self):
         return settings.BASE_URL + self.image.url
+    
+    def __str__(self) -> str:
+        return f"{self.alt_text}"
 
 
 class ProductAttributeValue(models.Model):
@@ -136,6 +143,10 @@ class ProductAttributeValue(models.Model):
     )
     
     attribute_value_image = models.ForeignKey(ProductAttributeValueImage, on_delete=models.SET_NULL, null=True, blank=True)
+    class Meta:
+        verbose_name = _("attribute value")
+        verbose_name_plural = _("attribute values")
+
 
     def __str__(self):
         return f"{self.product_attribute.name}: {self.attribute_value}"
@@ -195,6 +206,10 @@ class ProductInventory(models.Model):
     is_deleted = models.BooleanField(verbose_name=_("is deleted"), default=False)
     is_default = models.BooleanField(verbose_name=_("is default"), default=False)
     is_digital = models.BooleanField(verbose_name=_("is digital"), default=False)
+
+    class Meta:
+        verbose_name = _("product inventory")
+        verbose_name_plural = _("product inventories")
 
     def __str__(self):
         return self.sku
@@ -267,6 +282,8 @@ class ProductAttributeValues(models.Model):
 
     class Meta:
         unique_together = (("attributevalues", "productinventory"),)
+        verbose_name = _("product attribute")
+        verbose_name_plural = _("product attributes")
 
     def __str__(self):
         return f"{self.productinventory.sku} - {self.attributevalues.product_attribute.name}"
