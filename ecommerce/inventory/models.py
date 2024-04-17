@@ -29,6 +29,7 @@ class Category(MPTTModel):
     def get_absolute_url(self):
         return f"/{self.slug}/"
 
+
 class Product(models.Model):
     name = models.CharField(verbose_name=_("name"), max_length=150)
     slug = models.SlugField(max_length=255)
@@ -69,6 +70,7 @@ class Product(models.Model):
     #     thumbnail = File(thumb_io, name=image.name)
     #     return thumbnail
 
+
 class Brand(models.Model):
     name = models.CharField(
         max_length=150,
@@ -83,6 +85,7 @@ class Brand(models.Model):
     def __str__(self):
         return self.name
 
+
 class ProductAttributeCategory(models.Model):
     name = models.CharField(verbose_name=_("name"), max_length=100)
     slug = models.SlugField(verbose_name=_("slug"), max_length=150, unique=True)
@@ -91,6 +94,7 @@ class ProductAttributeCategory(models.Model):
         db_table = "product_attribute_category"
         verbose_name = _("product attribute category")
         verbose_name_plural = _("product attribute categories")
+
 
 class ProductAttribute(models.Model):
     name = models.CharField(verbose_name=_("name"), max_length=250, unique=True)
@@ -141,12 +145,11 @@ class ProductAttributeValue(models.Model):
         verbose_name=_("attribute value"),
         max_length=250
     )
-    
     attribute_value_image = models.ForeignKey(ProductAttributeValueImage, on_delete=models.SET_NULL, null=True, blank=True)
+
     class Meta:
         verbose_name = _("attribute value")
         verbose_name_plural = _("attribute values")
-
 
     def __str__(self):
         return f"{self.product_attribute.name}: {self.attribute_value}"
