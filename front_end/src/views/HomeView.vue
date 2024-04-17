@@ -12,8 +12,8 @@
         <h2 class="is-size-2 has-text-centered">Latest Products</h2>
       </div>
 
-      <div class=" column is-3" v-for="product in paginatedProducts" v-bind:key="product.id">
-        <div class="box">
+      <div class="column  is-3" v-for="product in paginatedProducts" v-bind:key="product.id">
+        <div class="box has-background-light">
           <figure class="image mb-4">
             <img :src="product.get_thumbnail">
           </figure>
