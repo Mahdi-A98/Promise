@@ -3,16 +3,7 @@
     <nav class="navbar is-dark">
       <div class="navbar-brand">
         <router-link to="/" class="navbar-item"><strong>Promise shop</strong></router-link>
-        
-        <a class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbar-menu" @mouseleave="changeBurger" @click="changeBurger">
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-        </a>
-      </div>
-
-      <div class="navbar-menu" id="navbar-menu" v-bind:class="{'is-active': showMobileMenu}">
+              <div class="navbar-menu is-pullesd-right" id="navbar-menu" v-bind:class="{'is-active': showMobileMenu}">
         <div class="navbar-end">
           <router-link to="/summer" class="navbar-item">Summer</router-link>
           <router-link to="/winter" class="navbar-item">Winter</router-link>
@@ -21,12 +12,20 @@
           <div class="buttons">
             <router-link to="/login" class="button is-light">Log in</router-link>
             <router-link to="/login" class="button is-success">
-              <span class="icon"><i class="fas fa-shopping-cart"></i></span>
+              <span class="icon"><i class="fa fa-shopping-cart"></i></span>
               <span>Cart</span>
             </router-link>
           </div>
         </div>
       </div>
+      </div>
+
+      <a class="navbar-burger iss-1 bg-success is-pulled-risght" aria-label="menu" aria-expanded="false" data-target="navbar-menu" @click="changeBurger">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
     </nav>
 
     <section class="section">
@@ -39,20 +38,14 @@
   </div>
 </template>
 
-<script>
-export default {
-  data() {
-    return {
-      showMobileMenu : false,
-    }
-  },
-  methods: {
-    changeBurger() {
-      this.showMobileMenu = ! this.showMobileMenu;
-    }
-  }
-  
+<script setup>
+import {ref} from 'vue';
+const showMobileMenu = ref(false);
+
+function changeBurger() {
+    showMobileMenu.value = ! showMobileMenu.value;
 }
+
 </script>
 
 
