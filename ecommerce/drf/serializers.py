@@ -83,6 +83,7 @@ class ProductInventorySerializer(serializers.ModelSerializer):
             "product_type",
             "brand",
             "store_price",
+            "retail_price",
             "is_default",
             "weight",
             "attributes",
