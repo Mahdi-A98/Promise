@@ -1,71 +1,78 @@
 <template>
-    <div class="columns row bg-light m-2 is-justify-content-space-between">
-        <div class="card m-1 column is-3-desktop is-3-tablet is-12-mobile is-offset-2-mobile">
+    <div class="columns row bg-light m-2 is-justify-content-space-around p-2 rounded-lg shadow-rose-200 shadow-sm">
+        <div class="card m-1 column is-4-desktop is-6-tablet is-12-mobile is-offset-2-mobile">
             <div class="column main-image-box">
                 <img v-if="mainImage?.current_image" :src="mainImage?.current_image" class="mainImage image-with-shadow">
             </div>
-            <div class="column m-3 fa-border">
-                <div class="row is-justify-content-space-between"    >
+            <div class="column m-3 fa-border rounded-md">
+                <div id="product-images-carousel" class="rowss flex flex-row is-justify-content-space-between h-36 overflow-scroll"  data-carousel="static" >
                     <template v-for="productInventory in productInventories">
-                        <div class="col-6 mt-2" v-for="mediaImage in productInventory.media">
+                        <div class="col-3 col-lg-6 m-1 w-36 duration-700 ease-in-out" v-for="mediaImage in productInventory.media" data-carousel-item>
                             <img    
                                 :src="mediaImage?.get_image"
-                                class="image product-inventory-image"
+                                class="image product-inventory-image h-full w-full object-cover"
                                 @mouseover="mainImage.previus_image = mainImage.current_image, mainImage.current_image=mediaImage?.get_image"
                                 @mouseout="mainImage.current_image=mainImage.previus_image"
                                 @click="mainImage.current_image=mediaImage?.get_image, mainImage.previus_image=mediaImage?.get_image"
                             >
                         </div>
                     </template>
-                    <div class="col-6 mt-2">
+                    <div class="col-3 col-lg-6 m-1 w-36 duration-700 ease-in-out" data-carousel-item>
                         <img    
                             :src="product?.get_thumbnail"
-                            class="image product-inventory-image"
+                            class="image product-inventory-image h-full w-full"
                             @mouseover="mainImage.previus_image=mainImage?.current_image, mainImage.current_image=product?.get_thumbnail"
                             @mouseout="mainImage.current_image=mainImage?.previus_image"
                             @click="mainImage.current_image=product?.get_thumbnail, mainImage.previus_image=product?.get_thumbnail"
                         >
                     </div>
+                    <button type="button" class="absolute  top-3/4 start-2 z-30 flex items-center justify-center  px-4 cursor-pointer group focus:outline-none" id="scroll-left" data-carousel-prev>
+                        <span class="inline-flex items-center justify-center w-10 h-10 scale-75 rounded-full  bg-rose-600 opacity-40 dark:bg-gray-800/30 group-hover:bg-red-500 group-hover:opacity-100 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                            <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+                            </svg>
+                            <span class="sr-only">Previous</span>
+                        </span>
+                    </button>
+                    <button type="button" class="absolute top-3/4 end-2 z-30 flex items-center justify-center  px-4 cursor-pointer group focus:outline-none" id="scroll-right" data-carousel-next>
+                        <span class="inline-flex items-center justify-center w-10 h-10 scale-75 rounded-full bg-rose-600 opacity-40 dark:bg-gray-800/30 group-hover:bg-red-500 group-hover:opacity-100 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                            <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                            </svg>
+                            <span class="sr-only">Next</span>
+                        </span>
+                    </button>
                 </div>
             </div>
         </div>
-        <div class="column is-3-desktop is-3-tablet is-12-mobile ml-3">
-            <div class="columns row is-justify-content-space-around is-flex-direction-row">
-                <div v-for="attr in selectiveProductAttributes" class="box m-2 column is-5 is-10-tablet">
-                    <h3>{{ attr?.name }}</h3>
-                    <div v-for="value in attr.attributes" class="m-2 is-flex is-flex-directions-column is-justify-content-space-around">
-                        <div class="box column is-10 is-justify-content-space-around is-flex mt-2 selected"  @click="updateSelection(attr?.name, value.attribute_value)">
-                            <p>{{ value.attribute_value }}</p>
-                            <img 
-                                v-if="value?.attribute_value_image" :src="value?.attribute_value_image.get_image"
-                                :style="`
-                                        width:${value?.attribute_value_image.defualt_width}px !important;
-                                        height:${value?.attribute_value_image.defualt_height}px;
-                                        border-radius:${value?.attribute_value_image.default_border_radious}%;`
-                                "
-                                class="is-align-self-flex-esnd"
-                                :class="{border: selectedProductCss.border}"
-                            >
-
-                        </div>
+        <div class="column is-3-desktop is-4-tablet is-12-mobile align-items-center">
+            <div class="columns row is-justify-content-space-between is-flex-direction-row">
+                <SelectiveAttribute v-for="attr in selectiveProductAttributes" :attr="attr" :updateSelection="updateSelection"/>
+            </div>
+        </div>
+        <div class="column flex-row align-items-center h-75 flex py-5 is-12-mobile is-4-desktop is-12-tablet box bg-blue-100 has-text-light justsify-center">
+            <div class="container bg-gradient border-gray-500 border-2  rounded h-75 py-5  flex flex-col justify-center justify-content-center lg:mt-2 lg:w-75 lg:max-w-md lg:flex-shrink-0">
+                <h3 class="text-rose-600 my-5 text-4xl">Brand: {{ selection?.brand}}</h3>
+                <template v-for="value, attr in selection?.attrs">
+                    <div class="rounded-2xl bg-slate-100 py-5 my-2 text-censter ring-1 ring-inset ring-gray-900/5 lg:py-16">
+                        <h4 class="text-slate-800 text-center text-pretty text-lg">
+                            Selected {{ attr }}: {{ value }}
+                        </h4>
+                    </div>
+                </template>
+                <div class="row rounded-2xl mx-1 justify-content-center flex py-2 h-20 bg-slate-300">
+                    <div class="text-center bg-zinc-100 opacity-75 rounded-2xl w-75 px-4 align-self-center">
+                        <p class="text-center text-slate-500" style="text-decoration:line-through; opacity:0.5;">Price: {{ selection?.product?.store_price }}</p>
+                        <p class="text-slate-800 text-xl italic font-mono">Price: {{ selection?.product?.retail_price }} $</p>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="column is-12-mobile is-5-desktop is-5-tablet box bg-dark has-text-light">
-            <div class="">
-                <h3>Brand: {{ selection?.brand}}</h3>
-                <template v-for="value, attr in selection?.attrs">
-                    <h4>
-                        Selected {{ attr }}: {{ value }}
-                    </h4>
-                </template>
-            </div>
-            <p style="text-decoration:line-through; opacity:0.5; font-size:x-small;">Price: {{ selection?.product?.store_price }}</p>
-            <p>Price: {{ selection?.product?.retail_price }}</p>
-            <div class="column text-center">
-                <div class="button has-background-danger-50 bg-gradient column is-8 is-offset-2">
-                    Add to cart <span class="icon ml-1">  <i class="fa fa-shopping-cart"></i> </span>
+                <div class="column text-center px-0">
+                    <div class="button has-background-danger-50 bg-gradient column ring-2 ring-orange-900 ring-inset-2">
+                        <span>Add to cart</span>
+                         <span >
+                             <span class="icon animate-bounce ml-1">  <i class="fa fa-shopping-cart"></i> </span>
+                        </span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -84,6 +91,7 @@
 </template>
 
 <script setup>
+import SelectiveAttribute from "@/components/selectiveAttribute.vue";
 import axios from "axios";
 import {ref, computed, onMounted} from "vue";
 import { useRoute } from "vue-router";
@@ -93,7 +101,7 @@ const selectedProduct = ref(null);
 const selection = ref({"attrs": {}})
 const productInventories = ref([]);
 const mainImage = ref({current_image: "", previus_image: ""});
-const selectedProductCss = ref({"border": "15px solid red;", "display": "none"})
+
 
 function setupSelection(productData) {
     selection.value.brand = productData?.brand?.name;
@@ -101,18 +109,31 @@ function setupSelection(productData) {
     productData.attributes.forEach((attr) => {
         if(attr.product_attribute.is_selective == true) {
             selection.value.attrs[attr.product_attribute.name] = attr.attribute_value;
-    }
-    })
+        }
+    });
 }
+
 function checkProductAttribute(product, attrs) {
     for (const [s_attr_name,s_attr_value]  of Object.entries(attrs)) {
             let match_case = product.attributes.find((p_attr) => p_attr.product_attribute.name == s_attr_name)
             if (match_case.attribute_value != s_attr_value) {
-                return false
+                return false;
             }
-     };
-     return true
+    };
+    return true;
+};
+
+function checkSelectedAttribute() {
+    selectiveProductAttributes.value.forEach((attr) => {attr.attributes.forEach((attrValue) => {attrValue.isSelected=false;})});
+    selectiveProductAttributes.value.forEach((attr) => {
+        attr.attributes.forEach((attrValue) => {
+            if (selection.value.attrs[attr.name] == attrValue.attribute_value) {
+                attrValue.isSelected = true;
+            }
+        });
+    });
 }
+
 function updateSelection(attr, value) {
     selection.value.attrs[attr] = value;
     let newProduct = productInventories.value.find((product) => {
@@ -120,17 +141,18 @@ function updateSelection(attr, value) {
             }
         )
     if (!newProduct){
-         let temp_attr = {};
-         temp_attr[attr] = value;
-         newProduct = productInventories.value.find((product) => {
+        let temp_attr = {};
+        temp_attr[attr] = value;
+        newProduct = productInventories.value.find((product) => {
                 return checkProductAttribute(product, temp_attr)
                 }
-          )
-          if(newProduct){
-              setupSelection(newProduct);
-          }
+        )
+        if(newProduct){
+            setupSelection(newProduct);
+        }
     }
     selection.value.product = newProduct;
+    checkSelectedAttribute();
 }
 
 function getProduct() {
@@ -184,15 +206,37 @@ const productAttributes = computed (() => {
 
 const selectiveProductAttributes = computed (() => {
     return productAttributes.value.filter((attr) => attr.attributes[0]?.product_attribute.is_selective === true);
-});
+})
 
 onMounted(() => {
     getProduct();
+    const container = document.getElementById('product-images-carousel');
+    const buttonLeft = document.getElementById('scroll-left');
+    const buttonRight = document.getElementById('scroll-right');
+
+    buttonLeft.addEventListener('click', () => {
+        container.scrollLeft -= 200; // Adjust the scroll amount as needed
+    });
+
+    buttonRight.addEventListener('click', () => {
+        container.scrollLeft += 200; // Adjust the scroll amount as needed
+    });
 })
 
 </script>
 
+
 <style scoped>
+#product-images-carousel{
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    scroll-behavior: smooth;
+
+}
+
+#product-images-carousel::-webkit-scrollbar{
+    display: none;
+}
 .image-with-shadow {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Horizontal offset, vertical offset, blur radius, color */
 }
@@ -209,6 +253,10 @@ onMounted(() => {
     cursor: pointer; 
     transition: transform 1s; 
 }
+/* *{
+    border: 2px solid red;
+    overflow:hidden !important;
+} */
 .main-image-box {
     overflow: hidden;
 }
