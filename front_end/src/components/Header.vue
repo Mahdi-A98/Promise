@@ -1,8 +1,16 @@
 <template>
-    <nav class="navbar sticky top-0 bg-sky-500 bg-opacity-35" role="navigation" aria-label="main navigation">
-        <div class="navbar-brand w-100">
-            <a class="navbar-itesm " href="https://bulma.io">
-            <img class=" object-contain h-20 m-2 p-0  w-20 navbar-item"  src="@\assets\pUntitled2.png"/>
+    <nav class="navbar sticky top-0 bg-rose-900 bg-opacity-100  bg-gradient 0 z-50 transition-opacity duration-300" id="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand w-100 mt-0 p-0">
+            <a class="navbar-itesm " href="/">
+            <img class=" object-contain h-20 m-2 p-0  w-20 navbar-item mt-0"  src="@\assets\promise_logo2.png"/>
+            </a>
+            <a class="navbar-end p-2 mr-2 hover:bg-opacity-0">
+                <div class="text-center rounded-full hover:bg-opacity-0 risng w-16 h-16 ring-slate-50 bg-opacity-90 p-2">
+                    <i class="fa fa-2x fa-shopping-basket text-amber-500"></i>
+                    <div class=" ring-1 z-20 ring-slate-50 ring-offset-1 rounded-full w-6 h-6 absolute lg:right-6 top-12 bg-red-500 bg-opacity-70 flex align-items-center justify-center">
+                        <span class="text-slate-50">{{ cartItemsCount || 0 }}</span>
+                    </div>
+                </div>
             </a>
 
             <a role="button" class="navbar-burger mr-5" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample" @click="changeBurger">
@@ -64,8 +72,23 @@
     
 </template>
 <script setup>
-import {ref} from 'vue';
+import {ref, onMounted, computed} from 'vue';
+import store from '@/store'
 const showMobileMenu = ref(false);
+const cart = ref(null)
+
+
+onMounted(() => {
+    cart.value = store.state.cart;
+}) 
+
+const cartItemsCount = computed(() =>{
+    let count = 0;
+    cart.value?.items.forEach(element => {
+        count += parseInt(element.quantity)
+    });
+    return count
+})
 
 function changeBurger() {
     showMobileMenu.value = ! showMobileMenu.value;
