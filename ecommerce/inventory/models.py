@@ -169,12 +169,16 @@ class ProductInventory(models.Model):
     )
     upc = models.CharField(
         max_length=12,
-        unique=True
+        unique=True,
+        null=True,
+        blank=True
     )
     product_type = models.ForeignKey(
         to=ProductType,
         related_name="product_type",
-        on_delete=models.PROTECT
+        on_delete=models.PROTECT,
+        null=True,
+        blank=True
     )
     product = models.ForeignKey(
         to=Product,
@@ -196,12 +200,18 @@ class ProductInventory(models.Model):
     )
     retail_price = models.PositiveBigIntegerField(
         verbose_name=_("retail price"),
+        null=True,
+        blank=True
     )
     store_price = models.PositiveBigIntegerField(
         verbose_name=_("store price"),
+        null=True,
+        blank=True
     )
     weight = models.FloatField(
         verbose_name=_("weight"),
+        null=True,
+        blank=True
     )
     created_at = models.DateTimeField(
         verbose_name=_("created at"),
@@ -236,6 +246,8 @@ class Media(models.Model):
     alt_text = models.CharField(
         verbose_name=_("alternative text"),
         max_length=255,
+        null=True,
+        blank=True
     )
     is_feature = models.BooleanField(
         verbose_name=_("is feature"),
