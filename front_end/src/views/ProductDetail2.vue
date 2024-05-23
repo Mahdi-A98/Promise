@@ -252,16 +252,22 @@ onMounted(() => {
     const container = document.getElementById('product-images-carousel');
     const buttonLeft = document.getElementById('scroll-left');
     const buttonRight = document.getElementById('scroll-right');
-
-    buttonLeft.addEventListener('click', () => {
-        container.scrollLeft -= 200; // Adjust the scroll amount as needed
-    });
-
-    buttonRight.addEventListener('click', () => {
-        container.scrollLeft += 200; // Adjust the scroll amount as needed
-    });
-})
-
+//  log ovwerflow of elements
+var docWidth = document.documentElement.offsetWidth;
+[].forEach.call(document.querySelectorAll('*'), function(el) {
+    if (el.offsetWidth > docWidth) {
+        try {
+            // console.log(el);
+            el.offsetWidth += 2;
+            console.log(el.offsetWidth);
+            
+        } catch (error) {
+            console.log(el);
+            console.log(el.offsetWidth);
+            
+        }
+    }
+});
 </script>
 
 
