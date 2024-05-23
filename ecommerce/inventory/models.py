@@ -10,7 +10,7 @@ from mptt.models import TreeForeignKey, MPTTModel
 class Category(MPTTModel):
     name = models.CharField(verbose_name=_("name"), max_length=100)
     slug = models.SlugField(verbose_name=_("slug"), max_length=150, unique=True)
-    is_active = models.BooleanField(verbose_name=_("is active"), default=False)
+    is_active = models.BooleanField(verbose_name=_("is active"), default=True)
     parent = TreeForeignKey(to="self", on_delete=models.PROTECT, null=True, blank=True, related_name="children")
 
     class MPTTMeta:
@@ -82,7 +82,7 @@ class Brand(models.Model):
         max_length=150,
         unique=True
     )
-
+    url = models.URLField(_("url"), null=True, blank=True)
     class Meta:
         db_table = "brand"
         verbose_name = _("brand")
@@ -95,7 +95,7 @@ class Brand(models.Model):
 class ProductAttributeCategory(models.Model):
     name = models.CharField(verbose_name=_("name"), max_length=100)
     slug = models.SlugField(verbose_name=_("slug"), max_length=150, unique=True)
-    is_active = models.BooleanField(verbose_name=_("is active"), default=False)
+    is_active = models.BooleanField(verbose_name=_("is active"), default=True)
     class Meta:
         db_table = "product_attribute_category"
         verbose_name = _("product attribute category")
@@ -215,6 +215,7 @@ class ProductInventory(models.Model):
     is_deleted = models.BooleanField(verbose_name=_("is deleted"), default=False)
     is_default = models.BooleanField(verbose_name=_("is default"), default=False)
     is_digital = models.BooleanField(verbose_name=_("is digital"), default=False)
+    url = models.URLField(_("url"), null=True, blank=True)
 
     class Meta:
         verbose_name = _("product inventory")
