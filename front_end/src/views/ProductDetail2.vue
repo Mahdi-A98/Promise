@@ -252,6 +252,18 @@ onMounted(() => {
     const container = document.getElementById('product-images-carousel');
     const buttonLeft = document.getElementById('scroll-left');
     const buttonRight = document.getElementById('scroll-right');
+    if (mainImage?.current_image){
+        buttonLeft.addEventListener('click', () => {
+            container.scrollLeft -= 200; // Adjust the scroll amount as needed
+        });
+    
+        buttonRight.addEventListener('click', () => {
+            container.scrollLeft += 200; // Adjust the scroll amount as needed
+        });
+    }
+
+
+})
 //  log ovwerflow of elements
 var docWidth = document.documentElement.offsetWidth;
 [].forEach.call(document.querySelectorAll('*'), function(el) {
