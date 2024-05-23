@@ -2,22 +2,28 @@
   <div class="home">
     <section class="hero is-medium is-dark mb-6">
       <div class="hero-body has-text-centered">
-        <h1>Welcome to promise shop </h1>
-        <p>best product finder </p>
+        <div class=" row justify-center">
+          <h1 class="fs-1 text-fuchsia-200 max-w-max justify-center jus" style="text-shadow:  0 0 3px #FF0000, 0 0 5px #0000FF;">Welcome to promise shop </h1>
+        </div>
+        <div class="row justify-center">
+          <p class="fs-2  max-w-max text-red-500" style="text-shadow:  0 0 5px #FF0000;">best product finder </p>
+        </div>
       </div>
     </section>
 
-    <div class="columns is-multiline">
+    <div class="columns is-multiline justify-between">
       <div class="column is-12">
         <h2 class="is-size-2 has-text-centered">Latest Products</h2>
       </div>
 
-      <div class="column  is-3" v-for="product in paginatedProducts" v-bind:key="product.id">
-        <div class="box has-background-light">
+      <div class="column is-2 is-3-tablet" v-for="product in paginatedProducts" v-bind:key="product.id">
+        <div class="box has-background-light row">
           <figure class="image mb-4">
             <img :src="product.get_thumbnail">
           </figure>
-          <h3 class="is-size-4">{{ product.name }}</h3>
+          <div class="container break-words h-10 overflow-ellipsis">
+            <p class="text-lg text-center">{{ product.name }}</p>
+          </div>
           <router-link v-bind:to="product.get_absolute_url" class="button is-dark mt-4"> View details</router-link>
         </div>
       </div>
@@ -42,8 +48,9 @@ export default {
     this.getPaginatedProducts()
   },
   methods: {
-    getPaginatedProducts() {
-      axios
+    async getPaginatedProducts() {
+      this.$store.commit('setIsLoading', true)
+      await axios
         .get('/api/inventory/product/all/')
         .then(response => {
           this.paginatedProducts = response.data
@@ -51,6 +58,7 @@ export default {
         .catch(error => {
           console.log(error)
         })
+        this.$store.commit('setIsLoasing', false)
     }
   }
 }
