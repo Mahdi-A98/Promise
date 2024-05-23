@@ -41,9 +41,11 @@ class ProductDetail(APIView):
     queryset = ProductInventory.objects.filter(is_active=True)
 
     def get(self, request, category_slug, product_slug):
-        query_set = self.queryset.filter(
-            product__slug=product_slug,
-            product__category__slug=category_slug
-        )
+
+        query_set = self.queryset.filter(product__slug=product_slug)
+        if not category_slug == "main":
+            query_set = query_set.filter(
+                product__category__slug=category_slug
+            )
         serializer = self.serializer_class(instance=query_set, many=True)
         return Response(data=serializer.data, status=status.HTTP_200_OK)

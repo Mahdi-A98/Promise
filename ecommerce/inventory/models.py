@@ -51,7 +51,9 @@ class Product(models.Model):
         return self.name
     
     def get_absolute_url(self):
-        return f"/{self.category.slug}/{self.slug}"
+        if self.category:
+            return f"/{self.category.slug}/{self.slug}"
+        return f"/main/{self.slug}"
     
     def get_thumbnail(self):
         if self.thumbnail:
