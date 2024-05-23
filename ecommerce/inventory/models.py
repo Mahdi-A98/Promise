@@ -1,6 +1,7 @@
 from django.db import models
 from django.utils.translation import gettext_lazy as _
 from django.conf import settings
+from django.core.exceptions import ValidationError
 
 from mptt.models import TreeForeignKey, MPTTModel
 
@@ -315,6 +316,18 @@ class ProductAttributeValues(models.Model):
         verbose_name = _("product attribute")
         verbose_name_plural = _("product attributes")
 
+    
+    def validate_unique(self, *args, **kwargs):
+        super().validate_unique(*args, **kwargs)
+        # Check if the combination of product_attribute and product_inventory is unique
+        if self.__class__.objects.filter(
+                attributevalues__product_attribute=self.attributevalues.product_attribute,
+                productinventory=self.productinventory
+        ).exclude(pk=self.pk).exists():
+            raise ValidationError(
+                {'attributevalues__product_attribute': 'This combination with product inventory already exists.'}
+            )
+
     def __str__(self):
         return f"{self.productinventory.sku} - {self.attributevalues.product_attribute.name}"
 
@@ -332,6 +345,8 @@ class ProductTypeAttribute(models.Model):
     )
 
     class Meta:
+        unique_together = (("product_attribute", "product_type"))
+
 
 class PricingTable(models.Model):
     product_inventory = models.ForeignKey(ProductInventory, on_delete=models.CASCADE)
