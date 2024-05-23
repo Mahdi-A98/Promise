@@ -1,6 +1,6 @@
 <template>
-    <div class="columns row bg-light m-2 is-justify-content-space-around p-2 rounded-lg shadow-rose-200 shadow-sm">
-        <div class="card m-1 column is-4-desktop is-6-tablet is-12-mobile is-offset-2-mobile">
+    <div class="columns row bg-light m-2 is-justify-content-space-between p-2 rounded-lg shadow-rose-200 shadow-sm">
+        <div v-if="mainImage?.current_image" class="card m-1 column is-4-desktop is-6-tablet is-12-mobile is-offset-2-mobile h-fit">
             <div class="column main-image-box">
                 <img v-if="mainImage?.current_image" :src="mainImage?.current_image" class="mainImage image-with-shadow">
             </div>
