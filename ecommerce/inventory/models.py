@@ -153,7 +153,13 @@ class ProductAttributeValue(models.Model):
         verbose_name=_("attribute value"),
         max_length=250
     )
-    attribute_value_image = models.ForeignKey(ProductAttributeValueImage, on_delete=models.SET_NULL, null=True, blank=True)
+    help = models.TextField(_("help text"), null=True, blank=True)
+    attribute_value_image = models.ForeignKey(
+        ProductAttributeValueImage, 
+        on_delete=models.SET_NULL, 
+        null=True, 
+        blank=True
+    )
 
     class Meta:
         verbose_name = _("attribute value")
