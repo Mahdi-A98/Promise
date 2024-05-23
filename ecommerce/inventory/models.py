@@ -107,6 +107,8 @@ class ProductAttribute(models.Model):
     description = models.TextField(verbose_name=_("description"), null=True, blank=True)
     category = models.ForeignKey(to=ProductAttributeCategory, null=True, blank=True, on_delete=models.SET_NULL)
     is_selective = models.BooleanField(_("is selective"), default=False)
+    is_filterable = models.BooleanField(_("is filterable"), default=False)
+    is_main = models.BooleanField(_("is main feature"), default=False)
 
     class Meta:
         verbose_name = _("attribute")
