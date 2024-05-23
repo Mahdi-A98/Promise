@@ -291,19 +291,12 @@ onMounted(() => {
     width: 100%;
     height:19rem;
     object-fit: fill;
-    /* border: 5px 5px 5px 5px linear-gradient(135deg, rgba(245, 3, 3, 0), rgb(244, 70, 70)); */
-    /* background-image: linear-gradient(135deg, rgba(255, 0, 0, 0), rgb(143 135 135)); */
-    /* filter: drop-shadow(2px 2px 5px rgb(0 0 0 / 0.5)); */
 }
 .mainImage:hover {
     transform: scale3d(1.1, 1.1, 1); 
     cursor: pointer; 
     transition: transform 1s; 
 }
-/* *{
-    border: 2px solid red;
-    overflow:hidden !important;
-} */
 .main-image-box {
     overflow: hidden;
 }
@@ -322,8 +315,6 @@ onMounted(() => {
     color: chocolate;
     background-color: rgb(237, 237, 237);
     align-content: center;
-    /* border: 1px solid black;
-    border-radius: 0px 5px 5px 0px; */
 }
 .attribute-box {
     border: 1px solid black;
