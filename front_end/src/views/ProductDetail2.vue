@@ -91,7 +91,13 @@
         <div class="mt-2 row attribute-box" v-for="attribute in productAttributes">
                 <span class="col-2 attribute-name">{{ attribute.name }}</span>
                 <span class="col-10 attribute-value">
-                    <span>{{attribute.attribute_values.join(" / ")}} </span>
+                    <div class="row">
+                        <template v-for="value in attribute.attribute_values">
+                            <div class=" bg-zinc-100 p-2 m-1 mt-1 col-3 rounded-md border-1 border-stone-500 max-w-fit" :class="{'col-12': value.length > 60, 'col-5': value.length > 30}">
+                                {{value}} 
+                            </div>
+                        </template>
+                    </div>
                 </span>
         </div>
     </div>
@@ -265,6 +271,14 @@ onMounted(() => {
     scrollbar-width: none;  /* Firefox */
     scroll-behavior: smooth;
 
+}
+.s-attr-box {
+    border-radius: 15px;
+    max-height: 540px;
+    margin-top: 5px;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    scroll-behavior: smooth;
 }
 
 #product-images-carousel::-webkit-scrollbar{
