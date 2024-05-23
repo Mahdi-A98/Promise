@@ -332,4 +332,14 @@ class ProductTypeAttribute(models.Model):
     )
 
     class Meta:
-        unique_together = (("product_attribute", "product_type"),)
+
+class PricingTable(models.Model):
+    product_inventory = models.ForeignKey(ProductInventory, on_delete=models.CASCADE)
+    break_quantity = models.PositiveBigIntegerField(_("break quantity"))
+    unit_price = models.PositiveBigIntegerField(_("unit price"))
+    extended_price = models.PositiveBigIntegerField(_("extended price"), null=True, blank=True)
+    is_discount = models.BooleanField(_("is discount"), default=False)
+    is_active = models.BooleanField(_("is active"), default=True)
+
+    class Meta:
+        unique_together = (("product_inventory", "break_quantity"),)
