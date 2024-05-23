@@ -33,11 +33,12 @@ class Category(MPTTModel):
 class Product(models.Model):
     name = models.CharField(verbose_name=_("name"), max_length=150)
     slug = models.SlugField(max_length=255)
-    web_id = models.CharField(max_length=50, unique=True)
+    web_id = models.CharField(max_length=50, unique=True, null=True, blank=True)
 
     description = models.TextField(null=True, blank=True)
     category = models.ForeignKey(to=Category, on_delete=models.SET_NULL, null=True, blank=True)
     thumbnail = models.ImageField(upload_to="product_images/", blank=True, null=True)
+    datasheet_url = models.URLField(_("datasheet url"), null=True, blank=True)
     is_active = models.BooleanField(default=False)
     created_at = models.DateTimeField(auto_now_add=True, editable=False)
     updated_at = models.DateTimeField(auto_now=True)
@@ -60,7 +61,10 @@ class Product(models.Model):
             return settings.BASE_URL + self.thumbnail.url
         else: 
             return ""
-        
+    @classmethod    
+    def web_id_generator(cls, slug):
+        return f"{slug}_{cls.objects.filter(slug=slug).count()}"
+    
     # def make_tumbnail(self, image, size=(300, 200)):
     #     img = Image.open(image)
     #     img.convert("RGB")
