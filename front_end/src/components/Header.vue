@@ -68,6 +68,20 @@ const showMobileMenu = ref(false);
 function changeBurger() {
     showMobileMenu.value = ! showMobileMenu.value;
 }
+
+window.addEventListener('scroll', function() {
+    const navbar = document.getElementById('navbar');
+    const scrollPosition = window.scrollY;
+    // const navbarOpacity = scrollPosition <= 35 ? 100 : 35;
+    // navbar.style.opacity = navbarOpacity / 100;
+    const scrolledDown = scrollPosition <= 35 ? false : true;
+    if (scrolledDown == true) {
+        navbar.classList.replace('bg-opacity-100', 'bg-opacity-75');
+    }
+    else {
+        navbar.classList.replace('bg-opacity-75', 'bg-opacity-100');
+    }
+});
 </script>
 <!-- <template>
     <nav class="navbar is-dark">
