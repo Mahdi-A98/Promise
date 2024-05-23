@@ -14,31 +14,33 @@
         </div>
         <div id="navbarBasicExample" class="navbar-menu rounded fixed bg-opacity-20 lg:static  top-20  z-5" v-bind:class="{'is-active': showMobileMenu}">
             <div class="navbar-start">
-            <a class="navbar-item">
-                Home
-            </a>
+            <!-- <a class="navbar-item"> -->
+                <RouterLink to="/" class="navbar-item text-xl  font-bold  lg:text-yellow-300">
+                    Home
+                </RouterLink>
+            <!-- </a> -->
 
-            <a class="navbar-item">
+            <a class="navbar-item text-xl  font-bold  lg:text-yellow-300 ">
                 Documentation
             </a>
 
             <div class="navbar-item has-dropdown is-hoverable">
-                <a class="navbar-link">
+                <a class="navbar-link text-xl  font-bold  lg:text-yellow-300">
                 More
                 </a>
 
                 <div class="navbar-dropdown">
-                <a class="navbar-item">
+                <a class="navbar-item text-xl">
                     About
                 </a>
-                <a class="navbar-item is-selected">
+                <a class="navbar-item is-selected text-xl">
                     Jobs
                 </a>
-                <a class="navbar-item">
+                <a class="navbar-item text-xl">
                     Contact
                 </a>
                 <hr class="navbar-divider">
-                <a class="navbar-item">
+                <a class="navbar-item text-xl">
                     Report an issue
                 </a>
                 </div>
@@ -48,10 +50,10 @@
             <div class="navbar-end">
             <div class="navbar-item">
                 <div class="buttons">
-                <a class="button is-primary">
+                <a class="button is-primary text-xl">
                     <strong>Sign up</strong>
                 </a>
-                <a class="button is-light">
+                <a class="button is-light text-xl">
                     Log in
                 </a>
                 </div>
