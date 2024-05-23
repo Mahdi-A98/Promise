@@ -67,10 +67,10 @@
                     </div>
                 </div>
                 <div class="column text-center px-0">
-                    <div class="button has-background-danger-50 bg-gradient column ring-2 ring-orange-900 ring-inset-2">
+                    <div class="button has-background-danger-50 bg-gradient column ring-2 ring-orange-900 ring-inset-2" @click="addToCart">
                         <span>Add to cart</span>
-                         <span >
-                             <span class="icon animate-bounce ml-1">  <i class="fa fa-shopping-cart"></i> </span>
+                        <span >
+                            <span class="icon animate-bounce ml-1">  <i class="fa fa-shopping-cart"></i> </span>
                         </span>
                     </div>
                 </div>
@@ -103,13 +103,36 @@ import store from "@/store";
 import axios from "axios";
 import {ref, computed, onMounted} from "vue";
 import { useRoute } from "vue-router";
+import {toast} from 'bulma-toast'
 const route = useRoute();
 const product = ref(null);
 const selectedProduct = ref(null);
-const selection = ref({"attrs": {}})
+const selection = ref({
+    "attrs": {},
+    "quantity": 0,
+    "product": null
+})
 const productInventories = ref([]);
 const mainImage = ref({current_image: "", previus_image: ""});
 
+function addToCart() {
+    if (isNaN(selection.quantity) || selection.quantity < 1) {
+        selection.value.quantity = 1
+    }
+    else {
+        selection.value.quantity += 1
+    }
+    const item = {"product":selection.value.product, "quantity":selection.value.quantity};
+    store.commit('addToCart', item)
+    toast({
+        message :"the product was added to the cart",
+        type: 'is-success',
+        dismissible: true,
+        pauseOnHover: true,
+        duration: 2000,
+        position: 'bottom-left'
+    })
+}
 
 function setupSelection(productData) {
     selection.value.brand = productData?.brand?.name;
