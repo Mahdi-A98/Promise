@@ -45,9 +45,9 @@
                 </div>
             </div>
         </div>
-        <div class="column is-3-desktop is-4-tablet is-12-mobile align-items-center">
-            <div class="columns row is-justify-content-space-between is-flex-direction-row">
-                <SelectiveAttribute v-for="attr in selectiveProductAttributes" :attr="attr" :updateSelection="updateSelection"/>
+        <div v-if="selectiveProductAttributes.length < 4" class="column is-3-desktop is-4-tablet is-12-mobile align-items-center  overflow-y-scroll s-attr-box">
+            <div class="columns row is-justify-contexnt-space-between is-flex-direction-row justify-center ">
+                <SelectiveAttribute v-for="attr in selectiveProductAttributes" :attr="attr" :manySiblings="false" :updateSelection="updateSelection"/>
             </div>
         </div>
         <div class="column flex-row align-items-center h-75 flex py-5 is-12-mobile is-4-desktop is-12-tablet box bg-blue-100 has-text-light justsify-center">
@@ -73,6 +73,13 @@
                              <span class="icon animate-bounce ml-1">  <i class="fa fa-shopping-cart"></i> </span>
                         </span>
                     </div>
+                </div>
+            </div>
+        </div>
+        <div v-if="selectiveProductAttributes.length >= 4" class=" row salign-items-center m-1 is-10">
+            <div class="column is-12">
+                <div class="row flex overflow-x-scrolsl is-justify-content-space-betsween is-flexs-diresction-row">
+                    <SelectiveAttribute v-for="attr in selectiveProductAttributes" :attr="attr" :manySiblings="true" :updateSelection="updateSelection"/>
                 </div>
             </div>
         </div>
