@@ -92,6 +92,7 @@
 
 <script setup>
 import SelectiveAttribute from "@/components/selectiveAttribute.vue";
+import store from "@/store";
 import axios from "axios";
 import {ref, computed, onMounted} from "vue";
 import { useRoute } from "vue-router";
@@ -155,10 +156,11 @@ function updateSelection(attr, value) {
     checkSelectedAttribute();
 }
 
-function getProduct() {
+async function getProduct() {
+    store.commit('setIsLoading', true)
     const product_slug = route.params.product_slug
     const category_slug = route.params.category_slug
-    axios
+    await axios
         .get(`/api/inventory/${category_slug}/${product_slug}`)
         .then(response => {
             productInventories.value = response.data;
@@ -170,6 +172,7 @@ function getProduct() {
         .catch(error => {
             console.log(error)
         });
+        store.commit('setIsLoading', false)
 };
 
 function cleanAttributes(attributes){
@@ -282,5 +285,43 @@ onMounted(() => {
     border: 1px solid black;
     border-radius: 5px;
     font-size:1.8vw;
+}
+
+.lds-dual-ring {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+
+}
+
+.lds-dual-ring::after{
+    content: " ";
+    display: block;
+    height: 64px;
+    margin: 8px;
+    width: 64px;
+    border-radius: 50%;
+    border: 6px solid #ccc;
+    border-color: #ccc transparent #ccc transparent;
+    animation: lds-dual-ring 1.2s linear infinite ;
+}
+
+@keyframes lds-dual-ring {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.is-loading-bar {
+    height: 0;
+    overflow: hidden;
+    --webkit-transition: all 0.3s;
+    
+    &.is-loading {
+        height: 80px;
+    }
 }
 </style>
